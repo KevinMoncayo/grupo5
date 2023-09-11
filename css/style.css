@@ -1,7 +1,13 @@
-
+*{ 
+margin: 0;
+padding: 0;
+}
 
 body{
+
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: url('/img/logo_blue.png'),auto;
+    
     
 }
 
@@ -10,7 +16,7 @@ header{
     height: 70px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #1a1a1a8e;
+    background-color: #1a1a1a89;
     
 }
 
@@ -18,6 +24,7 @@ header{
     width: 60px;
     height: 70px;
     float: left;
+    
 
 }
 
@@ -36,7 +43,7 @@ header{
 }
 
 #botonera_perfil ul li {
-    display: inline;
+    display:inline;
 }
 
 #botonera_perfil ul li a {
@@ -46,6 +53,11 @@ header{
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration:line;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 #botonera_perfil ul li a:hover {
@@ -53,112 +65,136 @@ header{
     color: rgb(255, 255, 255);
 }
 
-#contenido_perfil{
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
 
-}
-
-
-#foto_profile{
+.foto_usuario{
     width: 150px;
     height: 150px;
-    float: left;
-    background-image: url(/img/foto_profile.png);
-    background-size:cover;
-    position:absolute;
     margin-top: 10px;
-    margin-left: 700px;
-    margin-bottom: 10px;
-
+    margin-left: auto;
+    margin-right: auto;
     
-    
-    
+   
+  
 }
+
 
 #profile{
     width: 960px;
-    height: 200px;
-    background-color: rgba(54, 126, 226, 0.145);
-    margin-top: auto;
+    height: 300px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align:center;   
     box-sizing: border-box;
-    text-align: center;
     
+}
+
+
+
+#info_perfil{
+    background-color: gainsboro;
+    margin-right: 200px;
+    margin-left: 250px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-sizing: border-box;
+}
+
+p {
+    color: black;
+    text-align: center;
+    text-decoration: line;
 }
 
 
 #favoritos{
+
     width: 960px;
-    height: 90px;
+    height: 100px;      
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-
+    text-align:justify;
+    display: grid;
 }
 
 
-#auto1{
+
+
+#auto_1{
+    
     width: 315px;
     height: 200px;
     display: inline;
     margin-right: auto;
-    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
+    -webkit-border-radius: 16px ;
+    -moz-border-radius: 16px ;
+    -ms-border-radius: 16px ;
+    -o-border-radius: 16px ;
     box-sizing: border-box;
     
 }
 
 
-#auto2{
+
+#auto_2{
     width: 315px;
     height: 200px;
     display: inline;
     margin-right: auto;
-    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
     box-sizing: border-box;
 }
 
-#auto3{
+#auto_3{
     width: 315px;
     height: 200px;
     display: inline;
     margin-right: auto;
-    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
     box-sizing: border-box;
 }
 
-#auto4{
+#auto_4{
     width: 315px;
     height: 200px;
     display: inline;
     margin-right: auto;
-    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
     box-sizing: border-box;
 }
 
-#auto5{
+#auto_5{
     width: 315px;
     height: 200px;
     display: inline;
     margin-right: auto;
-    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
     box-sizing: border-box;
 }
 
-#auto6{
-    width: 315px;
-    height: 200px;
-    display: inline;
+#auto_6{
+    width: 322px;
+    height: 200px; 
+    display:inline;
     margin-right: auto;
-    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
     box-sizing: border-box;
 }
-
 
 
 
@@ -169,14 +205,13 @@ footer{
     height: 200px;
     margin-top: 400px;
     margin-left: auto;
-    margin-right: auto;
-    background: -webkit-linear-gradient(top, #0042ED, #FF0000);  
-  
+    margin-right: auto;    
+    background: -webkit-linear-gradient(top, #0042ED, #FF0000);    
      
 }
-a{
-    color: rgb(255, 255, 255);
-}
+
+
+
 
 #datos{
     width: 300px;
@@ -185,10 +220,14 @@ a{
     padding: 20px;
     box-sizing: border-box;
     text-decoration: line;
+    
 
 }
 
-
+#datos a{
+    color: rgb(242, 242, 242);
+    
+}
 
 
 .marca_footer{
@@ -197,3 +236,11 @@ a{
  margin-right: 50px;
  
 }
+
+.nome_marca{
+    text-align: left;
+    color: white;
+    margin-left: 45px;
+    
+}
+
