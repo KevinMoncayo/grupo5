@@ -69,8 +69,9 @@ header{
 .foto_usuario{
     width: 150px;
     height: 150px;
+    display:grid;
     margin-top: 10px;
-    margin-left: auto;
+    margin-left: 500px;
     margin-right: auto;
     
    
