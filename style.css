@@ -1,0 +1,199 @@
+
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+header{
+    width: 960px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1a1a1a8e;
+    
+}
+
+.marca{
+    width: 60px;
+    height: 70px;
+    float: left;
+
+}
+
+#botonera_perfil{
+    width: 600px;
+    height: 70px;
+    float: right;
+    margin-top: 20px;
+
+}
+
+#botonera_perfil ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+#botonera_perfil ul li {
+    display: inline;
+}
+
+#botonera_perfil ul li a {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration:line;
+}
+
+#botonera_perfil ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    color: rgb(255, 255, 255);
+}
+
+#contenido_perfil{
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+
+
+#foto_profile{
+    width: 150px;
+    height: 150px;
+    float: left;
+    background-image: url(/img/foto_profile.png);
+    background-size:cover;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 700px;
+    margin-bottom: 10px;
+
+    
+    
+    
+}
+
+#profile{
+    width: 960px;
+    height: 200px;
+    background-color: rgba(54, 126, 226, 0.145);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+
+#favoritos{
+    width: 960px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+
+#auto1{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    
+}
+
+
+#auto2{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+#auto3{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+#auto4{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+#auto5{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+#auto6{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+
+
+
+
+footer{
+
+    width: 960px;
+    height: 200px;
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: -webkit-linear-gradient(top, #0042ED, #FF0000);  
+  
+     
+}
+a{
+    color: rgb(255, 255, 255);
+}
+
+#datos{
+    width: 300px;
+    height: 200px;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    text-decoration: line;
+
+}
+
+
+
+
+.marca_footer{
+ margin-top: 50px;
+ margin-left: 50px;
+ margin-right: 50px;
+ 
+}
