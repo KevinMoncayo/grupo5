@@ -45,12 +45,14 @@ html{
 
 #titulo{
     
-    justify-content: center;
+    text-align: center;
+    
 }
 
 .proceso{
     flex: 3;
     padding: 3em;
+    text-align: center;
 }
 
 .pie_de_pagina{
