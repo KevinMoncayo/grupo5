@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos_venta_auto.css">
+    <title>venta_auto</title>
+</head>
+<body>
+    <header class="header">
+        <h1>
+            <a href="../index.html"><img src="../img/logo.png" alt="logo website" height="64" ></a>
+            
+            Garage Car
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Garage</a>
+                </li>
+                <li>
+                    <a href="venta_auto.html">Vendé tu auto</a>
+                </li>
+                <li>
+                    <a href="">Registro usuario</a>
+                </li>
+                <li>
+                    <a href="">Perfil</a>
+                </li>
+                <li>
+                    <a href="">Login</a>
+                </li>
+                <li id="boton_especial">
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h2 id="titulo">
+        Proceso de venta
+    </h2>
+    <section id="proceso_venta">
+        
+         <!-- alt+z para formatear -->
+            <div class="proceso">
+                <i class="fa-solid fa-table-list fa-beat fa-2xl"></i>
+                <p>Completá el formulario.</p>
+            </div>
+            <div class="proceso">
+                <i class="fa-solid fa-list-check fa-beat fa-2xl"></i>
+                <p>En menos de 24 horas obtené tu aceptación.</p>
+            </div>
+            <div class="proceso">
+                <i class="fa-solid fa-hand-holding-dollar fa-beat fa-2xl"></i>
+                <p>Obtené ofertas en tus datos de contacto.</p>
+            </div>
+        
+
+        
+    </section>
+    <section id="formulario">
+        <h2 id="anuncio">Recuerda que para obtener la aprobación de tu publicación, se deben ingresar/adjuntar datos y fotos reales. </h2>
+        <form action="htto://midominio.com/miServicioWeb.php" id="formulario"> <!-- method="get" method="post" -->
+            <fieldset>
+                <legend>
+                    Datos de contacto
+                </legend>
+                <label for="nombre">Nombre(s):</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"> <!-- generalmente name es igual a id -->
+            <label for="apellido">Apellido(s):</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+            <label for="dni">DNI:</label>
+            <input type="number" name="dni" id="dni" placeholder="Ingrese su DNI">
+            <br /> <!-- Así se escribe un salto de página -->
+            <!-- Añadir un selector con sexo con masculino, femenino, x-->
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nacimiento id="fecha_nacimiento">
+            <label for="mail">Email:</label>
+            <input type="text" name="mail" id="mail" placeholder="Ingrese su email">
+            <label for="celular">Celular:</label>
+            <input type="number" name="celular" id="celular" placeholder="Ingrese su número de celular">
+            </fieldset>
+            
+            <fieldset>
+                <legend>
+                    Datos de la publicación
+                </legend>
+                <label for="rubro">Rubro(*):</label>
+                <input type="text" name="rubro" id="rubro" placeholder="Ingrese el rubro del vehículo">
+                <br />
+                <label for="titulo">Título del anuncio:</label>
+                <input type="text" name="titulo" id="titulo" placeholder="Ingrese el título del anuncio">
+                <br />
+                <label for="descripcion">Descripción del anuncio:</label>
+                <textarea name="descripcion" id="descripcion" placeholder="Ingrese la descripción del anuncio"></textarea>
+                <label for="moneda">Moneda:</label>
+                <input type="text" name="moneda" id="moneda" placeholder="Seleccione la moneda">
+                <label for="precio">Precio del producto:</label>
+                <input type="text" name="precio" id="precio" placeholder="Ingrese el precio">
+                <br />
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado" placeholder="Seleccione el estado del vehículo: nuevo, usado, para repuestos.">
+            </fieldset>
+            <fieldset>
+                <legend>Imágenes de la publicación</legend>
+                <label for="imagen">Seleccione fotos a subir:</label>
+                <br />
+                <p>Puede subir hasta 10 imágenes en cualquiera de los siguientes formatos: .jpg .png</p>
+                <input type="file" name="imagen" id="imagen">
+            </fieldset>
+        </form>
+    </section>
+    <footer class="pie_de_pagina">
+        <p>Aquí va el pié de página</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/bfabf78837.js" crossorigin="anonymous"></script>
+</body>
+</html>
