@@ -16,7 +16,7 @@ header{
     height: 70px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #1a1a1a89;
+    background-color: rgba(0, 0, 0, 0.50);
     
 }
 
@@ -68,16 +68,20 @@ header{
 
 .foto_usuario{
     width: 150px;
-    height: 150px;
-    display:grid;
+    height: 150px;    
     margin-top: 10px;
-    margin-left: 500px;
-    margin-right: auto;
+    margin-left: 580px;
+    margin-right: 300px;
     
    
   
 }
 
+#profile h1{
+    text-align: center;
+
+    
+}
 
 #profile{
     width: 960px;
@@ -85,8 +89,7 @@ header{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
-    margin-right: auto;
-    text-align:center;   
+    margin-right: auto;     
     box-sizing: border-box;
     
 }
@@ -98,8 +101,7 @@ header{
     margin-right: 200px;
     margin-left: 250px;
     margin-top: 10px;
-    align-items: center;
-    text-align: center;
+    align-items: center;    
     border-radius: 10px;    
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -108,10 +110,12 @@ header{
     box-sizing: border-box;
 }
 
+
+
 p {
     color: black;
     text-align: center;
-    text-decoration: line;
+    
 }
 
 
