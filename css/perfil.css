@@ -6,7 +6,7 @@ padding: 0;
 body{
 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: url('/img/logo_blue.png'),auto;
+    
     
     
 }
@@ -54,10 +54,7 @@ header{
     font-weight: bold;
     text-decoration:line;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    
 }
 
 #botonera_perfil ul li a:hover {
