@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header class="page_header  conteiner">
-        <nav class="navbar">
+    <header class="page_header">
+        <nav class="navbar conteiner">
             <picture class="logo_conteiner">
                 <a href="/index.html">
                     <img class="logo" src="img/logo white.png" alt="Logo">
@@ -21,14 +21,17 @@
                 <li><a href="#" class="navbar_Item">Inicial</a></li>
                 <li><a href="#" class="navbar_Item">Garage</a></li>
                 <li><a href="#" class="navbar_Item">Vende tu Auto</a></li>
-                <li><a href="#" class="navbar_Item">Registro Usuario</a></li>
-                <li><a href="#" class="navbar_Item">Login</a></li>
+                <li><a href="#" class="navbar_Item">Contacto</a></li>
             </ul>
-            <a class="btn" href="pages/perfil.html"><button>Perfil</button></a>
+            <div class="container_user_section">
+                <button id="login" class="user_section" href="pages/perfil.html">Inicial Sesion</button>
+                <button id="sing_up" class="user_section" href="pages/perfil.html">Registrarse</button>
+                <button id="profile" class="user_section" href="pages/perfil.html">Perfil</button>
+            </div>
         </nav>
     </header>
     <main>
-        <section  class="notices_posters">
+        <section class="notices_posters">
             <div id="notices">
                 <input type="radio" name="notice_poster" id="notice1" checked>
                 <input type="radio" name="notice_poster" id="notice2">
