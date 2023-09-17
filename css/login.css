@@ -1,18 +1,16 @@
 
 
 body{
-    margin: 0;
-    padding: 0;
-    display: grid;
+    
     place-content:center;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    
 }
 
 body::before{
     content: "";
-    position: absolute;
+    position:absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -26,9 +24,12 @@ body::before{
 
 
 .login{
-
+    margin-top: 150px;
+    margin-left: 655px;
+    margin-bottom: 150px;
     align-items: center;
     position: relative;
+
 }
 form{
     position: relative;
@@ -57,7 +58,7 @@ form::before{
 form h2{
     margin: 0 0 30px;
     padding: 0;
-    color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -143,3 +144,4 @@ form a span{
     position: absolute;
     display: block;
 }
+
