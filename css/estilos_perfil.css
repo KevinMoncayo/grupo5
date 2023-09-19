@@ -1,0 +1,251 @@
+*{ 
+margin: 0;
+padding: 0;
+}
+
+body{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: url('/img/logo_blue.png'),auto;
+    
+    
+}
+
+header{
+    width: 960px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.50);
+    
+}
+
+.marca{
+    width: 60px;
+    height: 70px;
+    float: left;
+    
+
+}
+
+#botonera_perfil{
+    width: 600px;
+    height: 70px;
+    float: right;
+    margin-top: 20px;
+
+}
+
+#botonera_perfil ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+#botonera_perfil ul li {
+    display:inline;
+}
+
+#botonera_perfil ul li a {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration:line;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#botonera_perfil ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    color: rgb(255, 255, 255);
+}
+
+
+.foto_usuario{
+    width: 150px;
+    height: 150px;    
+    margin-top: 10px;
+    margin-left: 580px;
+    margin-right: 300px;
+    
+   
+  
+}
+
+#profile h1{
+    text-align: center;
+
+    
+}
+
+#profile{
+    width: 960px;
+    height: 300px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;     
+    box-sizing: border-box;
+    
+}
+
+
+
+#info_perfil{
+    background-color: gainsboro;
+    margin-right: 200px;
+    margin-left: 250px;
+    margin-top: 10px;
+    align-items: center;    
+    border-radius: 10px;    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+
+p {
+    color: black;
+    text-align: center;
+    
+}
+
+
+#favoritos{
+
+    width: 960px;
+    height: 100px;      
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify;
+    display: grid;
+}
+
+
+
+
+#auto_1{
+    
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
+    -webkit-border-radius: 16px ;
+    -moz-border-radius: 16px ;
+    -ms-border-radius: 16px ;
+    -o-border-radius: 16px ;
+    box-sizing: border-box;
+    
+}
+
+
+
+#auto_2{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
+    box-sizing: border-box;
+}
+
+#auto_3{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
+    box-sizing: border-box;
+}
+
+#auto_4{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
+    box-sizing: border-box;
+}
+
+#auto_5{
+    width: 315px;
+    height: 200px;
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
+    box-sizing: border-box;
+}
+
+#auto_6{
+    width: 322px;
+    height: 200px; 
+    display:inline;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 16px ;
+    box-sizing: border-box;
+}
+
+
+
+
+footer{
+
+    width: 960px;
+    height: 200px;
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;    
+    background: -webkit-linear-gradient(top, #0042ED, #FF0000);    
+     
+}
+
+
+
+
+#datos{
+    width: 300px;
+    height: 200px;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    text-decoration: line;
+    
+
+}
+
+#datos a{
+    color: rgb(242, 242, 242);
+    
+}
+
+
+.marca_footer{
+ margin-top: 50px;
+ margin-left: 50px;
+ margin-right: 50px;
+ 
+}
+
+.nome_marca{
+    text-align: left;
+    color: white;
+    margin-left: 45px;
+    
+}
+

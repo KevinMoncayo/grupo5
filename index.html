@@ -1,47 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos_venta_auto.css">
-    <title>Venta Autos</title>
+    <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Venta de Autos</title>
 </head>
+
 <body>
-    
-    <header class="header">
-        <h1>
-            <a href="index.html"><img src="img/logo.png" alt="logo website" height="64" ></a>
-            Garage Car
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Garage</a>
-                </li>
-                <li>
-                    <a href="pages/venta_auto.html">Vendé tu auto</a>
-                </li>
-                <li>
-                    <a href="">Registro usuario</a>
-                </li>
-                <li>
-                    <a href="">Perfil</a>
-                </li>
-                <li>
-                    <a href="">Login</a>
-                </li>
-                <li id="boton_especial">
-                    <a href="">Contacto</a>
-                </li>
+    <header class="page_header  conteiner">
+        <nav class="navbar">
+            <picture class="logo_conteiner">
+                <a href="/index.html">
+                    <img class="logo" src="img/logo white.png" alt="Logo">
+                </a>
+            </picture>
+            <ul class="navbar_menu">
+                <li><a href="index.html" class="navbar_Item">Inicial</a></li>
+                <li><a href="#" class="navbar_Item">Garage</a></li>
+                <li><a href="/pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
+                <li><a href="#" class="navbar_Item">Registro Usuario</a></li>
+                <li><a href="#" class="navbar_Item">Login</a></li>
+                <li><a href="/pages/contacto.html" class="navbar_Item">Contacto</a></li>
             </ul>
+            <a class="btn" href="pages/perfil.html"><button>Perfil</button></a>
         </nav>
     </header>
+    <main>
+        <section  class="notices_posters">
+            <div id="notices">
+                <input type="radio" name="notice_poster" id="notice1" checked>
+                <input type="radio" name="notice_poster" id="notice2">
+                <input type="radio" name="notice_poster" id="notice3">
+                <input type="radio" name="notice_poster" id="notice4">
+                <input type="radio" name="notice_poster" id="notice5">
+                <div id="notices_container">
+                    <ul class="inner_container">
+                        <li class="notice_wrapper slide1">
+                            <div class="text_notice_conteiner">
+                                <h2 class="notice_text">AVISO 1</h2>
+                                <a class="notice_link">CONOCE MAS</a>
+                            </div>
+                            <img src="/img/index_posters/poster_1.jpeg" alt="auto 1">
+                        </li>
+                        <li class="notice_wrapper slide_2">
+                            <div class="text_notice_conteiner">
+                                <h2 class="notice_text">AVISO 2</h2>
+                                <a class="notice_link">CONOCE MAS</a>
+                            </div>
+                            <img src="/img/index_posters/poster_3.jpeg" alt="auto 2">
+                        </li>
+                        <li class="notice_wrapper slide_3">
+                            <div class="text_notice_conteiner">
+                                <h2 class="notice_text">AVISO 3</h2>
+                                <a class="notice_link">CONOCE MAS</a>
+                            </div>
+                            <img src="/img/index_posters/poster_4.jpg" alt="auto3 3">
+                        </li>
+                        <li class="notice_wrapper slide_4">
+                            <div class="text_notice_conteiner">
+                                <h2 class="notice_text">AVISO 4</h2>
+                                <a class="notice_link">CONOCE MAS</a>
+                            </div>
+                            <img src="/img/index_posters/poster_2.jpg" alt="auto4 4">
+                        </li>
+                    </ul>
+                </div>
+                <div id="labels_container">
+                    <label for="notice1"></label>
+                    <label for="notice2"></label>
+                    <label for="notice3"></label>
+                    <label for="notice4"></label>
+                </div>
+            </div>
+        </section>
 
-    <h1>Venta de autos</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corrupti animi, vero cupiditate aliquid velit provident quasi! Nihil repellendus dolorem debitis in doloribus sequi, recusandae tempore accusamus, asperiores quisquam laboriosam!</p>
-    
+
+        <section class="car_by_brand">
+            <h3 class="select_brand_text">SELECIONE POR MARCA</h3>
+            <div id="slider_logo">
+                <input type="radio" name="slider_logo" id="slide_logo1" checked>
+                <input type="radio" name="slider_logo" id="slide_logo2">
+                <input type="radio" name="slider_logo" id="slide_logo3">
+                <input type="radio" name="slider_logo" id="slide_logo4">
+                <div id="slides_logo">
+                    <ul class="inner">
+                        <li class="slide_logo slide_1">
+                            <ul class="slide-content">
+                                <li class="conteiner_brand"><img src="/img/logos/audi.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/toyota.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/bmw.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/citroen.svg" alt=""></li>
+                            </ul>
+                        </li>
+                        <li class="slide_logo slide_2">
+                            <ul class="slide-content">
+                                <li class="conteiner_brand"><img src="/img/logos/ford.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/fiat.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/jeep-9.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/honda.svg" alt=""></li>
+                            </ul>
+                        </li>
+                        <li class="slide_logo slide_3">
+                            <ul class="slide-content">
+                                <li class="conteiner_brand"><img src="/img/logos/lamborghini.svg"></li>
+                                <li class="conteiner_brand"><img src="/img/logos/peugeot.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/nissan.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/mitsubishi.svg" alt=""></li>
+                            </ul>
+                        </li>
+                        <li class="slide_logo slide_4">
+                            <ul class="slide-content">
+                                <li class="conteiner_brand"><img src="/img/logos/volkswagen.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/bugatti.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/ferrari.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="/img/logos/mercedes_Benz.svg" alt=""></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="bullets">
+                    <label for="slide_logo1"></label>
+                    <label for="slide_logo2"></label>
+                    <label for="slide_logo3"></label>
+                    <label for="slide_logo4"></label>
+                </div>
+            </div>
+        </section>
+
+        <section class="car_body_type conteiner">
+            <div class="grid_container">
+                <h2 class="car_body_type_title">AUTOS POR CARROCERIA</h2>
+                <div class="grid_container_content">
+                    <div class="grid_col ">
+                        <a class="segment_content" href="/catalogo/convertible">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>Convertible</h3>
+                        </a>
+                        <a class="segment_content" href="/catalogo/coupe">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>Coup</h3>
+                        </a>
+                        <a class="segment_content" href="/catalogo/stationwagon">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>Familiar</h3>
+                        </a>
+                        <a class="segment_content" href="/catalogo/hatchback">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>Hatchback</h3>
+                        </a>
+                        <a class="segment_content" href="/catalogo/minivan">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>Monovolumen</h3>
+                        </a>
+                        <a class="segment_content">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>Pick Up</h3>
+                        </a>
+                        <a class="segment_content" href="/catalogo/sedan">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>Sedan</h3>
+                        </a>
+                        <a class="segment_content" href="/catalogo/suv">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>SUV</h3>
+                        </a>
+                        <a class="segment_content" href="/catalogo/van">
+                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <h3>Utilitario</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new_cars">
+            <div class="title_conteiner">
+                <h2 class="title_new_auto">AUTOS NUEVOS</h2>
+            </div>
+            <div class="car_cards_conteiner conteiner">
+                <article class="card">
+                    <img class="img_at" src="img/auto9.jpeg" alt="auto nuevo" />
+                    <div class="card_info">
+                        <h5 class="card_title">BMW</h5>
+                        <span class="car_price">$70000</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="img_at" src="img/auto7.jpeg" alt="auto1" />
+                    <div class="card_info">
+                        <h5 class="card_title">TOYOTA</h5>
+                        <span class="car_price">$70000</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="img_at" src="img/auto8.jpeg" alt="auto1" />
+                    <div class="card_info">
+                        <h5 class="card_title">HONDA</h5>
+                        <span class="car_price">$100000</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="compare_car">
+            <div class="compare_text">
+                <h2 class="title_compare">COMPARA AUTOS</h2>
+            </div>
+            <div class="compare_car_conteiner conteiner">
+                <div class="compare_info_container">
+                    <a class="compare_select_info_link">COMPARAR</a>
+                </div>
+                <div class="compare_conteiner_img">
+                    <img src="img/compare_car1.png" alt="car1" />
+                    <img src="img/compare_car2.png" alt="car2" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer_page">
+        <div class="footer_section conteiner">
+            <a class="logo_conteiner" href="/index.html">
+                <img class="logo" src="img/logo white.png" alt="Logo">
+            </a>
+            <ul class="fotter_column">
+                <span class="footer_column_title">¿NECESITA AYUDA?</span>
+                <li><a>Contacto</a></li>
+                <li><a>Preguntas frecuentes</a></li>
+                <li><a>Concesionarios</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">ATENCION AL CLIENTE</span>
+                <li><a>0800 700-1234</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">CONDICIONES LEGALES</span>
+                <li><a>Politicas de privacidad</a></li>
+                <li><a>Menciones Legales</a></li>
+            </ul>
+        </div>
+        <div class="footer_section_social conteiner">
+            <ul class="social_links">
+                <span>Segui a ATM en nuestras redes sociales:</span>
+                <li>
+                    <a href="https://www.facebook.com" class="social_fb"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" class="social_tw"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" class="social_yt"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+            <span>@Copyright ATM Todos los derechos reservados.</span>
+        </div>
+    </footer>
 </body>
+
 </html>
