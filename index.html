@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,8 +11,8 @@
 </head>
 
 <body>
-    <header class="page_header  conteiner">
-        <nav class="navbar">
+    <header class="page_header">
+        <nav class="navbar conteiner">
             <picture class="logo_conteiner">
                 <a href="/index.html">
                     <img class="logo" src="img/logo white.png" alt="Logo">
@@ -19,17 +20,19 @@
             </picture>
             <ul class="navbar_menu">
                 <li><a href="index.html" class="navbar_Item">Inicial</a></li>
-                <li><a href="#" class="navbar_Item">Garage</a></li>
-                <li><a href="/pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
-                <li><a href="#" class="navbar_Item">Registro Usuario</a></li>
-                <li><a href="#" class="navbar_Item">Login</a></li>
-                <li><a href="/pages/contacto.html" class="navbar_Item">Contacto</a></li>
+                <li><a href="" class="navbar_Item">Garage</a></li>
+                <li><a href="pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
+                <li><a href="pages/contacto.html" class="navbar_Item">Contacto</a></li>
             </ul>
-            <a class="btn" href="pages/perfil.html"><button>Perfil</button></a>
+            <div class="container_user_section">
+                <button id="login" class="user_section" href="pages/perfil.html">Inicial Sesion</button>
+                <button id="sing_up" class="user_section" href="pages/perfil.html">Registrarse</button>
+                <button id="profile" class="user_section" href="pages/perfil.html">Perfil</button>
+            </div>
         </nav>
     </header>
     <main>
-        <section  class="notices_posters">
+        <section class="notices_posters">
             <div id="notices">
                 <input type="radio" name="notice_poster" id="notice1" checked>
                 <input type="radio" name="notice_poster" id="notice2">
@@ -43,28 +46,28 @@
                                 <h2 class="notice_text">AVISO 1</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
-                            <img src="/img/index_posters/poster_1.jpeg" alt="auto 1">
+                            <img src="img/index_posters/poster_1.jpeg" alt="auto 1">
                         </li>
                         <li class="notice_wrapper slide_2">
                             <div class="text_notice_conteiner">
                                 <h2 class="notice_text">AVISO 2</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
-                            <img src="/img/index_posters/poster_3.jpeg" alt="auto 2">
+                            <img src="img/index_posters/poster_3.jpeg" alt="auto 2">
                         </li>
                         <li class="notice_wrapper slide_3">
                             <div class="text_notice_conteiner">
                                 <h2 class="notice_text">AVISO 3</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
-                            <img src="/img/index_posters/poster_4.jpg" alt="auto3 3">
+                            <img src="img/index_posters/poster_4.jpg" alt="auto3 3">
                         </li>
                         <li class="notice_wrapper slide_4">
                             <div class="text_notice_conteiner">
                                 <h2 class="notice_text">AVISO 4</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
-                            <img src="/img/index_posters/poster_2.jpg" alt="auto4 4">
+                            <img src="img/index_posters/poster_2.jpg" alt="auto4 4">
                         </li>
                     </ul>
                 </div>
@@ -89,34 +92,34 @@
                     <ul class="inner">
                         <li class="slide_logo slide_1">
                             <ul class="slide-content">
-                                <li class="conteiner_brand"><img src="/img/logos/audi.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/toyota.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/bmw.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/citroen.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/audi.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/toyota.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/bmw.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/citroen.svg" alt=""></li>
                             </ul>
                         </li>
                         <li class="slide_logo slide_2">
                             <ul class="slide-content">
-                                <li class="conteiner_brand"><img src="/img/logos/ford.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/fiat.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/jeep-9.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/honda.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/ford.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/fiat.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/jeep-9.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/honda.svg" alt=""></li>
                             </ul>
                         </li>
                         <li class="slide_logo slide_3">
                             <ul class="slide-content">
-                                <li class="conteiner_brand"><img src="/img/logos/lamborghini.svg"></li>
-                                <li class="conteiner_brand"><img src="/img/logos/peugeot.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/nissan.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/mitsubishi.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/lamborghini.svg"></li>
+                                <li class="conteiner_brand"><img src="img/logos/peugeot.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/nissan.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/mitsubishi.svg" alt=""></li>
                             </ul>
                         </li>
                         <li class="slide_logo slide_4">
                             <ul class="slide-content">
-                                <li class="conteiner_brand"><img src="/img/logos/volkswagen.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/bugatti.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/ferrari.svg" alt=""></li>
-                                <li class="conteiner_brand"><img src="/img/logos/mercedes_Benz.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/volkswagen.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/bugatti.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/ferrari.svg" alt=""></li>
+                                <li class="conteiner_brand"><img src="img/logos/mercedes_Benz.svg" alt=""></li>
                             </ul>
                         </li>
                     </ul>
@@ -136,39 +139,39 @@
                 <div class="grid_container_content">
                     <div class="grid_col ">
                         <a class="segment_content" href="/catalogo/convertible">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>Convertible</h3>
                         </a>
                         <a class="segment_content" href="/catalogo/coupe">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>Coup</h3>
                         </a>
                         <a class="segment_content" href="/catalogo/stationwagon">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>Familiar</h3>
                         </a>
                         <a class="segment_content" href="/catalogo/hatchback">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>Hatchback</h3>
                         </a>
                         <a class="segment_content" href="/catalogo/minivan">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>Monovolumen</h3>
                         </a>
                         <a class="segment_content">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>Pick Up</h3>
                         </a>
                         <a class="segment_content" href="/catalogo/sedan">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>Sedan</h3>
                         </a>
                         <a class="segment_content" href="/catalogo/suv">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>SUV</h3>
                         </a>
                         <a class="segment_content" href="/catalogo/van">
-                            <img src="/img/car_type/car_1.svg" alt="autos convetibles" />
+                            <img src="img/car_type/car_1.svg" alt="autos convetibles" />
                             <h3>Utilitario</h3>
                         </a>
                     </div>
@@ -222,7 +225,7 @@
 
     <footer class="footer_page">
         <div class="footer_section conteiner">
-            <a class="logo_conteiner" href="/index.html">
+            <a class="logo_conteiner" href="index.html">
                 <img class="logo" src="img/logo white.png" alt="Logo">
             </a>
             <ul class="fotter_column">
@@ -257,6 +260,5 @@
             <span>@Copyright ATM Todos los derechos reservados.</span>
         </div>
     </footer>
-</body>
 
 </html>

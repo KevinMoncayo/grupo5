@@ -98,25 +98,27 @@ input[type="text"]::placeholder {
 
 .conteiner {
     max-width: 1200px;
-    margin: 0 auto;
+    margin:0 auto;
+    padding: 0 1rem;
 }
 
 /*CSS PREDERMINADOS*/
 
 /*HEDER*/
 .page_header {
-    padding: var(--spacing-5) 0;
-    background-color: var(--light-bg-solid);
+    background-color: rgba(255, 255, 255, 0.895);
     position: sticky;
     top: 0;
     z-index: 110;
+    border-bottom: solid 1.5px rgb(185, 185, 185);
 }
 
 .navbar {
-    margin: 0 1rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 .logo_conteiner {
     display: flex;
@@ -134,31 +136,45 @@ input[type="text"]::placeholder {
 
 .logo {
     object-fit: contain;
-    width: 55px;
-    height: 50px;
+    width: 50px;
+    height: 45px;
 }
 
 .page_header .navbar .navbar_menu .navbar_Item {
-    font-size: larger;
-}
-
-.page_header .btn button {
-    font-weight: 500;
+    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
-    color: #000000;
-    padding: 5px 15px;
-    background: var(--secondary-300);
+    font-weight: 510;
+}
+.container_user_section {
+    display: flex;
+    gap: 0.5rem;
+}
+.page_header .user_section {
+    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: rgb(56, 97, 251);
+    padding:0.2rem 0.6rem;
+    border: solid 2px rgb(56, 97, 251);
+    border-radius: 1.2rem;
+}
+.page_header #sing_up {
+    color: #ffffff;   
+    background: rgb(56, 97, 251);
     border: none;
-    border-radius: 50px;
+}
+/*cambiar a display block cuando se inicia sesion o se regitro*/
+#profile{
+    display: none;
 }
 
-.page_header .btn button:hover {
-    transform: scale(1.2);
+.page_header  .user_section:hover {
+    transform: scale(1.05);
 }
 
 .navbar_menu a:hover {
-    color: red;
-    scale: 1.2;
+    font-weight: 600;
+    color: #3861fb;
 }
 
 /*HEDER*/
@@ -172,8 +188,7 @@ input[type="text"]::placeholder {
     position: relative;
     padding: 0;
     margin: 0 auto;
-    width: 1000px;
-    height: auto;
+    width: 950px;
     max-width: 100%;
     overflow: hidden;
     background-color: #ffffff;
@@ -225,7 +240,7 @@ input[type="text"]::placeholder {
     width: 25%;
     display: flex;
     flex-shrink: 0;
-
+    min-height: 250px;
 }
 
 .notice_wrapper {
@@ -235,7 +250,8 @@ input[type="text"]::placeholder {
 
 .notice_wrapper img {
     display: block;
-    max-width: 100%;
+    height: auto;
+    max-height: 400px ;
 }
 
 .notice_text {
@@ -580,7 +596,7 @@ input[type="text"]::placeholder {
 }
 
 .compare_car_conteiner {
-    width: 60%;
+    width: 75%;
     max-width: 1000px;
     display: flex;
     position: relative;
@@ -681,8 +697,8 @@ input[type="text"]::placeholder {
 }
 
 .footer_section .logo_conteiner .logo {
-    width: 110px;
-    height: 80px;
+    width: 90px;
+    height: 70px;
 }
 
 .footer_section .logo_conteiner:hover {
