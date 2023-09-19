@@ -1,51 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="../css/estilos_contacto.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/contactos.css">
+    <title>Venta de Autos</title>
 </head>
-<body >
-    <nav > 
-        <div class="top">
-            <img src="../img/logo white.png"style="margin: 15px">
-            <h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:antiquewhite; margin-left: 15px; ">GarageCar</h2>
-            <div class="lista-nav" >
-                <ul> 
-                    <li>
-                        <a href="../index.html">Incicio</a>
-                    </li>
-                    <li >
-                        <a>Garage</a>
-                    </li>
-                    <li>
-                        <a href="../pages/venta_auto.html">Vende tu auto</a>
-                    </li>
-                    <li>
-                        <a>Registro de Usuario</a>
-                    </li>
-                    <li>
-                        <a href="../pages/perfil.html">Perfil</a>
-                    </li>
-                    <li>
-                        <a >Login</a>
-                    </li>
-                </ul>
+
+<body>
+    <header class="page_header">
+        <nav class="navbar conteiner">
+            <picture class="logo_conteiner">
+                <a href="../index.html">
+                    <img class="logo" src="../img/logo white.png" alt="Logo">
+                </a>
+            </picture>
+            <ul class="navbar_menu">
+                <li><a href="../index.html" class="navbar_Item">Inicial</a></li>
+                <li><a href="" class="navbar_Item">Garage</a></li>
+                <li><a href="../pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
+                <li><a href="../pages/contacto.html" class="navbar_Item">Contacto</a></li>
+            </ul>
+            <div class="container_user_section">
+                <button id="login" class="user_section" href="../pages/perfil.html">Inicial Sesion</button>
+                <button id="sing_up" class="user_section" href="../pages/perfil.html">Registrarse</button>
+                <button id="profile" class="user_section" href="../pages/perfil.html">Perfil</button>
             </div>
-            
-        </div >
+        </nav>
+    </header>
+    <main>
+        <section class="sucursales">
+            <div class="sucursales__grupo">
+                <div class="sucursal" id="map">
+                </div>
+            </div>
+        </section>
 
-    </nav>
-    <div>
-        <h2>Contactanos</h2>
-        <p>Envianos un correo a nuestra dirección <a href="mailto:fer__co@hotmail.com">correosgaragecar@garagecar.com</a>
-        </p>
-    </div>
-    <!-- <div >
-        <img src="Imagenes/unsplash_qtDQy1Crgcc.jpg" alt="">
-    </div> -->
+        <section class="form">
+            <h2>Queres enviarnos tu mensaje?</h2>
+            <form action="" class="form__contacto" id="form__contacto">
+
+                <div class="form__grupo form__grupo_correcto" id="form_apellido">
+                    <label for="apellido" class="form__label">Apellido</label>
+                    <!---for indica que es el label del ID id_apellido-->
+                    <div class="form__grupo_input">
+                        <input type="text" class="form__input" name="apellido" id="apellido" placeholder="Apellido">
+                        <i class="form__validacion_estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input_error">Completar el campo Apellido</p>
+                </div>
+
+                <div class="form__grupo form__grupo_incorrecto" id="form_nombre">
+                    <label for="nombre" class="form__label">Nombre</label>
+                    <!---for indica que es el label del ID id_nombre-->
+                    <div class="form__grupo_input">
+                        <input type="text" class="form__input" name="nombre" id="nombre" placeholder="Nombre">
+                        <i class="form__validacion_estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input_error">Completar el campo Nombre</p>
+                </div>
+
+                <div class="form__grupo" id="form_email">
+                    <label for="email" class="form__label">email</label>
+                    <!---for indica que es el label del ID id_email-->
+                    <div class="form__grupo_input">
+                        <input type="email" class="form__input" name="email" id="email"
+                            placeholder="midireccion@micorreo.com">
+                        <i class="form__validacion_estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input_error">Completar el campo Email</p>
+                </div>
+
+                <div class="form__grupo" id="form_telefono">
+                    <label for="telefono" class="form__label">Teléfono</label>
+                    <!---for indica que es el label del ID id_telefono-->
+                    <div class="form__grupo_input">
+                        <input type="text" class="form__input" name="telefono" id="telefono" placeholder="telefono">
+                        <i class="form__validacion_estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__input_error">Completar el campo telefono</p>
+                </div>
+
+                <div class="form__mensaje_error" id="form_mensaje_error">
+                    <p> <i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Complete el formulario correctamente</p>
+                </div>
+
+                <div class="form__group_mensaje">
+                    <label >Dejanos tu mensaje</label>
+                    <div class="form__mensaje">
+                        <textarea name="comentarios" placeholder="Deja tu Mensaje, consulta o sugerencia" maxlength="400">
+                    </textarea>
+                    </div>
+                </div>
+
+                <div class="form__grupo form__grupo_btn_enviar">
+                    <button type="submit" class="form__btn">Enviar</button>
+                    <p class="form__mensaje_exitoso">El mensaje se envio exitosamente</p>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer_page">
+        <div class="footer_section conteiner">
+            <a class="logo_conteiner" href="../index.html">
+                <img class="logo" src="../img/logo white.png" alt="Logo">
+            </a>
+            <ul class="fotter_column">
+                <span class="footer_column_title">¿NECESITA AYUDA?</span>
+                <li><a>Contacto</a></li>
+                <li><a>Preguntas frecuentes</a></li>
+                <li><a>Concesionarios</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">ATENCION AL CLIENTE</span>
+                <li><a>0800 700-1234</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">CONDICIONES LEGALES</span>
+                <li><a>Politicas de privacidad</a></li>
+                <li><a>Menciones Legales</a></li>
+            </ul>
+        </div>
+        <div class="footer_section_social conteiner">
+            <ul class="social_links">
+                <span>Segui a ATM en nuestras redes sociales:</span>
+                <li>
+                    <a href="https://www.facebook.com" class="social_fb"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" class="social_tw"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" class="social_yt"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+            <span>@Copyright ATM Todos los derechos reservados.</span>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <script>
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta" });
+
+        // Initialize and add the map
+        let map;
+
+        async function initMap() {
+            // The location of Uluru
+            const position = { lat: -32.898323, lng: -68.849336 };
+            // Request needed libraries.
+            //@ts-ignore
+            const { Map } = await google.maps.importLibrary("maps");
+            const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+
+            // The map, centered at Uluru
+            map = new Map(document.getElementById("map"), {
+                zoom: 18,
+                center: position,
+                mapId: "DEMO_MAP_ID",
+
+            });
+
+            // The marker, positioned at Uluru
+            const marker = new AdvancedMarkerView({
+                map: map,
+                position: position,
+                title: "GarageCar",
+            });
+        }
+
+        initMap();
+    </script>
+   
 </body>
-</html>
 
+</html>
