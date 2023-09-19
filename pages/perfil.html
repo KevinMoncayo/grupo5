@@ -1,68 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
     <link rel="stylesheet" href="../css/estilos_perfil.css">
+    <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
+    <title>Perfil</title>
 
 </head>
+
 <body>
     <header>
-        <div><img class="marca" src="../img/logo.png" alt="logo" ></div>
+
+        <picture>
+            <img class="marca" src="../img/logo.png" alt="logo">
+        </picture>
+  
         <nav id="botonera_perfil">
             <ul>
                 <li><a href="../index.html">Inicial</a></li>
                 <li><a href="#">Garage</a></li>
                 <li><a href="../pages/venta_auto.html">Vende tu Auto</a></li>
-                <li><a href="#">Registro Usuario</a></li>
+
+                <li><a href="/pages/registro_user.html">Registro Usuario</a></li>
                 <li><a href="../pages/perfil.html">Perfil</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="/pages/login.html">Login</a></li>
+
                 <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    
-    </header>
-    
 
-    <h1>
-        tester
-    </h1>
-       
-    <div>
-    
-    <img class="foto_usuario" src="../img/foto_profile.png" alt="foto_del_usuario">
+    </header>
+
+    <picture>
+
+        <img class="foto_usuario" src="/img/foto_perfil.jpeg" alt="foto_del_usuario">
+
+    </picture>
+
+    <br><br>
+
+
+    <main>
+        <section id="profile">
+
+            <h1><b>PERFIL</b></h1>
+
+            <p id="info_perfil">JULIO GONZALEZ</p>
+            <p id="info_perfil">34.234.676-87</p>
+            <p id="info_perfil">24/09/1980</p>
+            <p id="info_perfil">JULIO@MAIL.COM.AR</p>
+            <p id="info_perfil">*******</p>
+            <p id="info_perfil">11-5754-9876</p>
+
+
+        </section>
+
+    </main>
+
+    <br><br>
+
+    <div class="actualizar_datos">
+        <div class="coluna"><a href="/pages/registro_user.html">((ACTUALIZAR DATOS))</a></div>
+
 
     </div>
 
-<br><br>
-    <section>
-        <div id="profile">            
-
-            <h1><b>PERFIL</b></h1> 
-                       
-            <p id="info_perfil">NOMBRE COMPLETO</p>                   
-            <p id="info_perfil">DOCUMENTO</p>
-            <p id="info_perfil">FECHA DE NASCIMENTO</p>
-            <p id="info_perfil">E-MAIL</p>
-            <p id="info_perfil">CONTRASENA</p>
-            <p id="info_perfil">TELEFONO</p>
-            
-        </div>           
-        
-    </section>
-
- <br><br>
-
-    <p><a href="#"> Actualizar Datos</a></p>
 
     <b></b>
 
 
     <div id="favoritos">
+        <div class="carousel_container">
 
         <h2>FAVORITOS</h2>
             <div>
+
+                <a href="#"><img id="auto_1" src="../img/auto1.jpeg"></img></a>        
+                <a href="#"><img id="auto_2" src="../img/auto2.jpeg"></img></a>
+                <a href="#"><img id="auto_3" src="../img/auto3.jpeg"></img></a>
+                <a href="#"><img id="auto_4" src="../img/auto4.jpeg"></img></a>
+                <a href="#"><img id="auto_5" src="../img/auto5.jpeg"></img></a>
+                <a href="#"><img id="auto_6" src="../img/auto6.jpeg"></img></a>
+
+         </div>
+
+        </div>
+    </div>
+
+    <!---
+    
+    
+
+    <div id="favoritos">
+        <div>
+        <h2>FAVORITOS</h2>
+            
                 <a href="#"><img id="auto_1" src="../img/auto1.jpeg"></img></a>        
                 <a href="#"><img id="auto_2" src="../img/auto2.jpeg"></img></a>
                 <a href="#"><img id="auto_3" src="../img/auto3.jpeg"></img></a>
@@ -72,17 +106,14 @@
          </div>
 
 
+
     </div>
-
-
-
-<br><br>
 
     <footer>
     
         <img class="marca_footer" src="../img/logo white.png" alt="logo">
 
-   
+    -->
 
             <div id="datos">
                 <p><a href="#">Garage</a></p>
@@ -91,12 +122,47 @@
                 <p><a href="../pages/contacto.html">Contacto</a></p>
             </div>
 
-            <p class="nome_marca">GarageCar</p>
 
+    <br><br>
 
-
+    <footer class="footer_page">
+        <div class="footer_section conteiner">
+            <a class="logo_conteiner" href="/index.html">
+                <img class="logo" src="/img/logo white.png" alt="Logo">
+            </a>
+            <ul class="fotter_column">
+                <span class="footer_column_title">¿NECESITA AYUDA?</span>
+                <li><a>Contacto</a></li>
+                <li><a>Preguntas frecuentes</a></li>
+                <li><a>Concesionarios</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">ATENCION AL CLIENTE</span>
+                <li><a>0800 700-1234</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">CONDICIONES LEGALES</span>
+                <li><a>Politicas de privacidad</a></li>
+                <li><a>Menciones Legales</a></li>
+            </ul>
+        </div>
+        <div class="footer_section_social conteiner">
+            <ul class="social_links">
+                <span>Segui a ATM en nuestras redes sociales:</span>
+                <li>
+                    <a href="https://www.facebook.com" class="social_fb"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" class="social_tw"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" class="social_yt"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+            <span>@Copyright ATM Todos los derechos reservados.</span>
+        </div>
     </footer>
 
-    
 </body>
+
 </html>
