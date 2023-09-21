@@ -4,164 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos_perfil.css">
+    <link rel="stylesheet" href="/grupo5/css/perfil.css">
+    
     <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
     <title>Perfil</title>
 
 </head>
 
 <body>
-    <header>
-
-        <picture>
-            <img class="marca" src="../img/logo.png" alt="logo">
-        </picture>
-  
-        <nav id="botonera_perfil">
-            <ul>
-                <li><a href="../index.html">Inicial</a></li>
-                <li><a href="#">Garage</a></li>
-                <li><a href="../pages/venta_auto.html">Vende tu Auto</a></li>
-
-                <li><a href="/pages/registro_user.html">Registro Usuario</a></li>
-                <li><a href="../pages/perfil.html">Perfil</a></li>
-                <li><a href="/pages/login.html">Login</a></li>
-
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+    <header class="page_header">
+        <nav class="navbar conteiner">
+            <picture class="logo_conteiner">
+                <a href="/grupo5/index.html">
+                    <img class="logo" src="/grupo5/img/LOGO_NEGRO.png" alt="Logo">
+                </a>
+            </picture>
+            <ul class="navbar_menu">
+                <li><a href="/grupo5/index.html" class="navbar_Item">Inicial</a></li>
+                <li><a href="" class="navbar_Item">Garage</a></li>
+                <li><a href="/grupo5/pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
+                <li><a href="/grupo5/pages/contacto.html" class="navbar_Item">Contacto</a></li>
             </ul>
-        </nav>
+            <div class="container_user_section">
+                
+                <a id="profile" class="user_section" href="/grupo5/index.html"><b>Salir</b></a>
+            </div>
 
+            <!--
+            <button id="login" class="user_section" href="/grupo5/pages/login.html">Inicial Sesion</button>
+                <button id="sing_up" class="user_section" href="/grupo5/pages/registro_user.html">Registrarse</button>
+            -->
+        </nav>
     </header>
 
-    <picture>
-
-        <img class="foto_usuario" src="/img/foto_perfil.jpeg" alt="foto_del_usuario">
-
-    </picture>
-
-    <br><br>
-<p>12345</p>
-
-    <main>
-        <section id="profile">
-
-            <h1><b>PERFIL</b></h1>
-
-            <p id="info_perfil">JULIO GONZALEZ</p>
-            <p id="info_perfil">34.234.676-87</p>
-            <p id="info_perfil">24/09/1980</p>
-            <p id="info_perfil">JULIO@MAIL.COM.AR</p>
-            <p id="info_perfil">*******</p>
-            <p id="info_perfil">11-5754-9876</p>
 
 
-        </section>
 
-    </main>
+    <main class="container">
+        <div class="left">
+          <picture>
+            <img class="foto_usuario" src="/grupo5/img/foto_perfil.jpeg" alt="foto_del_usuario">
+          </picture>
+        </div>
+        <div class="right">
+          <section id="perfil">
+            <h1><b><u>PERFIL</u></b></h1>
+            <br><br>
+            <div class="info_perfil">
+              <p><b>Nombre: </b>Julio Gonzalez</p>
+              <p><b>D.N.I.: </b>34.234.676-87</p>
+              <p><b>Fecha Nascimiento: </b>24/09/1980</p>
+              <br>
+              <p><b>Mail: </b>julio_g@mail.com.ar</p>
+              <p><b>Clave: </b>*******</p>              
+              <p><b>Telefono: </b>11-5754-9876</p>
+              <br>
+              <a class="actualizar_datos" href="#"><i class="fa-solid fa-gear fa-spin"></i> Cambiar datos  </a>
+            </div>
+          </section>
+          
+        </div>
+      </main>
 
-    <br><br>
 
-    <div class="actualizar_datos">
-        <div class="coluna"><a href="/pages/registro_user.html">((ACTUALIZAR DATOS))</a></div>
-
-
-    </div>
-
+    <!--INICIO DE FAVORITOS-->
 
     <b></b>
 
-
-    <div id="favoritos">
-        <div class="carousel_container">
-
-        <h2>FAVORITOS</h2>
-            <div>
-
-                <a href="#"><img id="auto_1" src="../img/auto1.jpeg"></img></a>        
-                <a href="#"><img id="auto_2" src="../img/auto2.jpeg"></img></a>
-                <a href="#"><img id="auto_3" src="../img/auto3.jpeg"></img></a>
-                <a href="#"><img id="auto_4" src="../img/auto4.jpeg"></img></a>
-                <a href="#"><img id="auto_5" src="../img/auto5.jpeg"></img></a>
-                <a href="#"><img id="auto_6" src="../img/auto6.jpeg"></img></a>
-
-         </div>
-
-        </div>
-    </div>
-
-    <!---
-    
-    
-
-    <div id="favoritos">
-        <div>
-        <h2>FAVORITOS</h2>
+    <section class="favoritos">
+        <div class="title_conteiner">
+            <h2 class="title_favoritos"><b><u> <i class="fa-regular fa-star" style="color: #1569f9;"> FAVORITOS</i></u></b></h2>
             
-                <a href="#"><img id="auto_1" src="../img/auto1.jpeg"></img></a>        
-                <a href="#"><img id="auto_2" src="../img/auto2.jpeg"></img></a>
-                <a href="#"><img id="auto_3" src="../img/auto3.jpeg"></img></a>
-                <a href="#"><img id="auto_4" src="../img/auto4.jpeg"></img></a>
-                <a href="#"><img id="auto_5" src="../img/auto5.jpeg"></img></a>
-                <a href="#"><img id="auto_6" src="../img/auto6.jpeg"></img></a>
-         </div>
+        </div>
+        <div class="car_cards_conteiner conteiner">
+            <article class="card">
+                <img class="img_at" src="/grupo5/img/auto1.jpeg" alt="auto1"/>                
+                <div class="card_info">
+                    <h5 class="card_title">FORD</h5>
+                    <span class="car_price">$90000</span>
+                    <a href="#"><b>Entrar</b></a>
+                </div>
+            </article>
+            <article class="card">
+                <img class="img_at" src="/grupo5/img/auto2.jpeg" alt="auto2" />
+                <div class="card_info">
+                    <h5 class="card_title">FERRARI</h5>
+                    <span class="car_price">$130000</span>
+                    <a href="#"><b>Entrar</b></a>
+                </div>
+            </article>
+            <article class="card">
+                <img class="img_at" src="/grupo5/img/auto3.jpeg" alt="auto3" />
+                <div class="card_info">
+                    <h5 class="card_title">BMW</h5>
+                    <span class="car_price">$100000</span>
+                    <a href="#"><b>Entrar</b></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="img_at" src="/grupo5/img/auto4.jpeg" alt="auto4" />
+                <div class="card_info">
+                    <h5 class="card_title">FIAT</h5>
+                    <span class="car_price">$108000</span>
+                    <a href="#"><b>Entrar</b></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="img_at" src="/grupo5/img/auto5.jpeg" alt="auto5" />
+                <div class="card_info">
+                    <h5 class="card_title">JEEP</h5>
+                    <span class="car_price">$109700</span>
+                    <a href="#"><b>Entrar</b></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="img_at" src="/grupo5/img/auto6.jpeg" alt="auto6" />
+                <div class="card_info">
+                    <h5 class="card_title">PORCHE</h5>
+                    <span class="car_price">$155000</span>
+                    <a href="#"><b>Entrar</b></a>
+                </div>
+            </article>
+
+            </article>
+        </div>
+    </section>
+
+
+<!--AQUI INICIO DEL FOOTER-->
 
 
 
+<footer class="footer_page">
+    <div class="footer_section conteiner">
+        <a class="logo_conteiner" href="index.html">
+            <img class="logo" src="/grupo5/img/LOGO_BLANCO.png" alt="Logo">
+        </a>
+        <ul class="fotter_column">
+            <span class="footer_column_title">¿NECESITA AYUDA?</span>
+            <li><a>Contacto</a></li>
+            <li><a>Preguntas frecuentes</a></li>
+            <li><a>Concesionarios</a></li>
+        </ul>
+        <ul class="fotter_column">
+            <span class="footer_column_title">ATENCION AL CLIENTE</span>
+            <li><a>0800 700-1234</a></li>
+        </ul>
+        <ul class="fotter_column">
+            <span class="footer_column_title">CONDICIONES LEGALES</span>
+            <li><a>Politicas de privacidad</a></li>
+            <li><a>Menciones Legales</a></li>
+        </ul>
     </div>
-
-    <footer>
-    
-        <img class="marca_footer" src="../img/logo white.png" alt="logo">
-
-    -->
-
-            <div id="datos">
-                <p><a href="#">Garage</a></p>
-                <p><a href="../pages/venta_auto.html">Vende tu Auto</a></p>
-                <p><a href="#">Preguntas Frequentes</a></p>
-                <p><a href="../pages/contacto.html">Contacto</a></p>
-            </div>
-
-
-    <br><br>
-
-    <footer class="footer_page">
-        <div class="footer_section conteiner">
-            <a class="logo_conteiner" href="/index.html">
-                <img class="logo" src="/img/logo white.png" alt="Logo">
-            </a>
-            <ul class="fotter_column">
-                <span class="footer_column_title">¿NECESITA AYUDA?</span>
-                <li><a>Contacto</a></li>
-                <li><a>Preguntas frecuentes</a></li>
-                <li><a>Concesionarios</a></li>
-            </ul>
-            <ul class="fotter_column">
-                <span class="footer_column_title">ATENCION AL CLIENTE</span>
-                <li><a>0800 700-1234</a></li>
-            </ul>
-            <ul class="fotter_column">
-                <span class="footer_column_title">CONDICIONES LEGALES</span>
-                <li><a>Politicas de privacidad</a></li>
-                <li><a>Menciones Legales</a></li>
-            </ul>
-        </div>
-        <div class="footer_section_social conteiner">
-            <ul class="social_links">
-                <span>Segui a ATM en nuestras redes sociales:</span>
-                <li>
-                    <a href="https://www.facebook.com" class="social_fb"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com" class="social_tw"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com" class="social_yt"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-            </ul>
-            <span>@Copyright ATM Todos los derechos reservados.</span>
-        </div>
-    </footer>
+    <div class="footer_section_social conteiner">
+        <ul class="social_links">
+            <span>Segui a ATM en nuestras redes sociales:</span>
+            <li>
+                <a href="https://www.facebook.com" class="social_fb"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" class="social_tw"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" class="social_yt"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+        <span>@Copyright ATM Todos los derechos reservados.</span>
+    </div>
+</footer>
 
 </body>
 

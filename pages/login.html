@@ -4,73 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="Stylesheet" href="/css/login.css">
-    <link rel="Stylesheet" href="/css/perfil.css">
+    <link rel="Stylesheet" href="/grupo5/css/login.css">
+   
     
     
 </head>
 <body>
 
-    <!--ACA ESTA LA BOTONERA -->
+<!--ACA ESTA LA BOTONERA -->
 
-    <header>
-        <div><img class="marca" src="/img/logo.png" alt="logo" ></div>
-        <nav id="botonera_perfil">
-            <ul>
-                <li><a href="#">Inicial</a></li>
-                <li><a href="#">Garage</a></li>
-                <li><a href="#">Vende tu Auto</a></li>
-                <li><a href="#">Registro Usuario</a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Contacto</a></li>
+    <header class="page_header">
+        <nav class="navbar conteiner">
+            <picture class="logo_conteiner">
+                <a href="/index.html">
+                    <img class="logo" src="/grupo5/img/logo white.png" alt="Logo">
+                </a>
+            </picture>
+            <ul class="navbar_menu">
+                <li><a href="index.html" class="navbar_Item">Inicial</a></li>
+                <li><a href="" class="navbar_Item">Garage</a></li>
+                <li><a href="pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
+                <li><a href="pages/contacto.html" class="navbar_Item">Contacto</a></li>
             </ul>
+            <div class="container_user_section">
+                <!-- <a id="login" class="user_section" href="/grupo5/pages/perfil.html">Inicial Sesion</a> -->
+                <a id="sing_up" class="user_section" href="/grupo5/pages/registro_user.html">Registrarse</a>
+                <a id="profile" class="user_section" href="/grupo5/pages/perfil.html">Perfil</a>
+            </div>
         </nav>
-    
     </header>
 
 
+<!---ACA ESTA EL BOX PARA HACER EL LOGIN -->
 
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <div class="input-container">
+                <input type="text" name="user_name" required />
+                <label>Usuario</label>
+            </div>
+            <div class="input-container">
+                <input type="password" name="password" required />
+                <label>Contraseña</label>
+            </div>
+            <a href="perfil.html">Entrar</a>
+        </form>
+    </div>
+    
+    
 
-<!--ACA ESTA EL BOX PARA HACER EL LOGIN -->
-
-
-<div class="login">
-    <form>
-        <h2>Iniciar Sesion</h2>
-            <div class="entrar">
-            <input type="text" name="user_name" required />
-            <label>Usuario</label>
-</div>
-<div class="entrar">
-        <input type="password" name="password" required />
-        <label>Password</label>
-</div>
-
-
-
- <!--BOTON ENTRAR--->
-        
-
-    <a href="/pages/registro_user.html">       
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-        Entrar        
-    </a>    
-    </form>
-
-</div>
 
 
     
+<!---FIN DEL BOX PARA HACER EL LOGIN -->
+    
 
-<!--ACA EL FOOTER QUE HAY QUE ACTUALIZAR-->
+<!--AQUI INICIO DEL FOOTER-->
+
+
+
 <footer class="footer_page">
     <div class="footer_section conteiner">
-        <a class="logo_conteiner" href="/index.html">
-            <img class="logo" src="/img/logo white.png" alt="Logo">
+        <a class="logo_conteiner" href="index.html">
+            <img class="logo" src="/grupo5/img/logo white.png" alt="Logo">
         </a>
         <ul class="fotter_column">
             <span class="footer_column_title">¿NECESITA AYUDA?</span>
