@@ -42,24 +42,24 @@
             <h2>Queres enviarnos tu mensaje?</h2>
             <form action="" class="form__contacto" id="form__contacto">
 
-                <div class="form__grupo form__grupo_correcto" id="form_apellido">
+                <div class="form__grupo " id="form_apellido">
                     <label for="apellido" class="form__label">Apellido</label>
                     <!---for indica que es el label del ID id_apellido-->
                     <div class="form__grupo_input">
                         <input type="text" class="form__input" name="apellido" id="apellido" placeholder="Apellido">
                         <i class="form__validacion_estado fa-solid fa-circle-xmark"></i>
                     </div>
-                    <p class="form__input_error">Completar el campo Apellido</p>
+                    <p class="form__input_error">Entre 3 y 40 Caracteres alfabéticos</p>
                 </div>
 
-                <div class="form__grupo form__grupo_incorrecto" id="form_nombre">
+                <div class="form__grupo" id="form_nombre">
                     <label for="nombre" class="form__label">Nombre</label>
                     <!---for indica que es el label del ID id_nombre-->
                     <div class="form__grupo_input">
                         <input type="text" class="form__input" name="nombre" id="nombre" placeholder="Nombre">
                         <i class="form__validacion_estado fa-solid fa-circle-xmark"></i>
                     </div>
-                    <p class="form__input_error">Completar el campo Nombre</p>
+                    <p class="form__input_error">Entre 3 y 40 Caracteres alfabéticos</p>
                 </div>
 
                 <div class="form__grupo" id="form_email">
@@ -70,7 +70,8 @@
                             placeholder="midireccion@micorreo.com">
                         <i class="form__validacion_estado fa-solid fa-circle-xmark"></i>
                     </div>
-                    <p class="form__input_error">Completar el campo Email</p>
+                    <p class="form__input_error">Direccion de Correo no valida</p>
+                    <p class="form__input_error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo</p>
                 </div>
 
                 <div class="form__grupo" id="form_telefono">
@@ -83,17 +84,20 @@
                     <p class="form__input_error">Completar el campo telefono</p>
                 </div>
 
+                <div class="form__grupo_mensaje" id= "form_mensaje">
+                    <label for="comentarios">Dejanos tu mensaje</label>
+                    <div class="form__mensaje">
+                        <textarea name="comentarios" id="comentarios" placeholder="Deja tu Mensaje, consulta o sugerencia" maxlength="400">
+                    </textarea>
+                    </div>
+                    <p class="form__input_error">Mensaje no valido</p>
+                </div>
+
                 <div class="form__mensaje_error" id="form_mensaje_error">
                     <p> <i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Complete el formulario correctamente</p>
                 </div>
 
-                <div class="form__group_mensaje">
-                    <label >Dejanos tu mensaje</label>
-                    <div class="form__mensaje">
-                        <textarea name="comentarios" placeholder="Deja tu Mensaje, consulta o sugerencia" maxlength="400">
-                    </textarea>
-                    </div>
-                </div>
+                
 
                 <div class="form__grupo form__grupo_btn_enviar">
                     <button type="submit" class="form__btn">Enviar</button>
@@ -142,7 +146,7 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
+    <script src="../js/contactos.js"></script>
     <script>
         (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
             ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta" });

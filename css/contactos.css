@@ -705,7 +705,7 @@ main{
 
 .form__mensaje_error,
 .form__grupo_btn_enviar,
-.form__group_mensaje {
+.form__grupo_mensaje {
 	grid-column: span 2;
 }
 
@@ -715,7 +715,7 @@ main{
 	background: #F66060;
 	padding: 0 15px;
 	border-radius: 3px;
-	/*display: none;*/
+	display: none;
 }
 
 .form__mensaje_activo {
@@ -753,7 +753,7 @@ main{
     margin-top: 10px;
 	font-size: 14px;
 	color: #119200;
-	/*display: none;*/
+	display: none;
 }
 
 .form__mensaje_exitoso_Activo {
@@ -795,6 +795,19 @@ textarea{
 
 .form__grupo_incorrecto .form__input {
 	border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 800px){
+
+    .form__contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .form__mensaje_error,
+    .form__grupo_btn_enviar,
+    .form__group_mensaje {
+	    grid-column: 1;
+    }
 }
 
 
