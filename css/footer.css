@@ -1,0 +1,76 @@
+
+/*FOOTER*/
+.footer_page {
+    background-color: #000000;
+    padding: 1.5rem 0 1rem 0;
+}
+
+.footer_page .footer_section .fotter_column li a {
+    color: #bbbb;
+}
+
+.footer_section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.footer_section .fotter_column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer_column_title {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--light-bg-solid);
+    margin-bottom: 0.8rem;
+}
+
+.footer_section_social {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    gap: var(--spacing-12);
+}
+
+.footer_page .social_links a,
+.footer_page .footer_section_social span {
+    color: #bbbb;
+}
+
+.social_links li a {
+    font-size: 1.5rem;
+}
+
+.footer_section .logo_conteiner .logo {
+    width: 90px;
+    height: 70px;
+}
+
+.footer_section .logo_conteiner:hover {
+    scale: 1.2;
+}
+
+.footer_page .footer_section .fotter_column li a:hover {
+    color: var(--light-bg-solid);
+}
+
+.social_links .social_fb:hover {
+    color: #4889d4;
+}
+
+.social_links .social_tw:hover {
+    color: var(--light-bg-solid);
+}
+
+.social_links .social_yt:hover {
+    color: #d61111;
+}

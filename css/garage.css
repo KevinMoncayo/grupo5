@@ -1,0 +1,171 @@
+@import url("/css/footer.css");
+@import url("/css/header.css");
+@import url("/css/styles.css");
+
+/*BUSCADOR AUTOS*/
+.seach_car_conteiner {
+    background-color: #3374db;
+}
+
+.seach_car {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+}
+
+#seach {
+    width: 100%;
+    padding: 0.4rem 0.4rem;
+    margin: 0.5rem;
+    color: #505050;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+#seach[type="text"]:focus,
+#seach[type="text"]:hover,
+#seach[type="text"]:active {
+    outline: none;
+}
+
+.separacion {
+    padding: 3rem 0;
+    background-color: #f1f1f1d6;
+}
+
+.secction_filters {
+    background-color: #f1f1f1d6;
+}
+
+.contenedor_filters {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/*FILTROS*/
+
+.acordion {
+    overflow: auto;
+    display: block;
+    width: 18rem;
+    min-width: 18rem;
+    padding: 0 1rem;
+}
+
+input[type="checkbox"] {
+    display: none;
+    appearance: none;
+}
+
+.accordion-item {
+    width: 100%;
+    background-color: #fefefe;
+    border-radius: 0.5em;
+    border: #8585857e;
+    box-shadow: 2px 2px 2px 2px #00000014;
+    border-bottom: solid 3px #858585c6;
+}
+
+.accordion-item:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.accordion-content {
+    color: #606060;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    padding: 0 1rem;
+}
+
+.accordion-content li {
+    padding: 0.5rem 0;
+}
+
+.accordion-content li:hover {
+    color: #000000;
+}
+
+.accordion-header {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+input[type="checkbox"]~label .arrow {
+    display: inline-block;
+    transition: 0.4s;
+}
+
+input[type="checkbox"]:checked~label .arrow {
+    transform: rotate(90deg);
+}
+
+input[type="checkbox"]:checked~label {
+    color: #0083e9;
+}
+
+input[type="checkbox"]~.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+input[type="checkbox"]:checked~.accordion-content {
+    max-height: 200vh;
+    transition: 1s;
+}
+
+/*CAR_CARD*/
+.conteiner_card_overflow {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 54rem;
+}
+
+.car_cards_conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 4px;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    background-color: var(--light-font-solid);
+}
+
+.card:hover {
+    box-shadow: 2px 4px #00000014;
+    transform: scale(1.03);
+}
+
+.card_info {
+    text-align: center;
+}
+
+.new_cars .card .card_price {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.card_title {
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: solid 2px #8888888d;
+}
+
+.card_info .car_price {
+    padding: 0.5rem 0;
+    display: block;
+}
