@@ -165,7 +165,7 @@ input[type="text"]::placeholder {
 }
 /*cambiar a display block cuando se inicia sesion o se regitro*/
 #profile{
-    display: none;
+    display: block;
 }
 
 .page_header  .user_section:hover {
