@@ -1,6 +1,6 @@
-@import url("/css/footer.css");
-@import url("/css/header.css");
-@import url("/css/styles.css");
+@import url("../css/footer.css");
+@import url("../css/header.css");
+@import url("../css/styles.css");
 
 /*BUSCADOR AUTOS*/
 .seach_car_conteiner {
