@@ -335,6 +335,25 @@ input[type="text"]::placeholder {
     background-color: #000000;
     padding: 1.5rem 0 1rem 0;
 }
+.footer_page li a {
+    font-size: 10px;
+}
+
+.fotter_column span {
+    font-size: 12px;
+}
+
+.footer_section_social li a span{
+
+    font-size: 10px;
+}
+
+
+.footer_column_title {
+
+    font-size: 10px;
+}
+
 
 .footer_page .footer_section .fotter_column li a {
     color: #bbbb;
@@ -370,6 +389,11 @@ input[type="text"]::placeholder {
     align-items: center;
     margin: 0.5rem 0;
     gap: var(--spacing-12);
+}
+
+.social_links span {
+    font-size: 12px;
+
 }
 
 .footer_page .social_links a,
@@ -412,3 +436,215 @@ input[type="text"]::placeholder {
 /*FOOTER*/
 
 
+/*--------------------------------------------------------------------------------*/
+
+
+/* MEDIA PARA DESKTOP */
+
+@media screen and (max-width: 1024px ) {
+
+
+    
+    .conteiner {
+        max-width: 100%;
+        margin:0 auto;
+        padding: 0 1rem;
+    }
+    
+    
+    
+    /*HEDER*/
+    
+    .page_header {
+        
+        
+        background-color: rgba(255, 255, 255, 0.895);
+        position: sticky;
+        top: 0;
+        z-index: 110;
+        border-bottom: solid 1.5px rgb(185, 185, 185);
+    }
+    
+    .navbar {
+        
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    .logo_conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        
+    }
+    
+    .navbar .navbar_menu {
+        display: flex;
+        gap: var(--spacing-12);
+    }
+
+ 
+      /* Parte direita (informações de perfil e actualizar datos) */
+    
+      
+      
+      #perfil {
+              
+        font-size: 15px;
+        
+    }
+    
+      .info_perfil a {
+        color: #3861fb;
+        font-size: 13px;
+        
+    }
+    
+    
+    /* FIN PERFIL*/
+    
+    
+    
+    /*FAVORITOS*/
+    
+    
+    .title_conteiner {
+        
+        font-size: 15px;
+    }
+    
+  
+
+    .card h5 {
+    
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .car_price{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+
+    
+   
+    .card_info a {        
+        font-size: 12px;
+    }
+    
+  
+    }
+    
+    /*FIN FAVORITOS*/
+    
+    
+    
+    
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+      
+    
+    
+    /* Container principal Perfil */
+    
+    
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      /* Parte esquerda (foto do usuário) */
+    
+      
+  
+      
+      #perfil {       
+        
+        font-size: 14px;
+        
+    }
+    
+      .info_perfil a {
+        color: #3861fb;
+        font-size: 13px;
+        
+    }
+    
+    }
+    /* FIN MEDIA ----------------------------------------------*/
+    
+    
+    
+
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+
+    .foto_usuario {
+        width: 100%;
+        height: none;
+        object-fit: cover;
+
+    }
+
+    #perfil h1 {
+              
+        font-size: 15px;
+        
+    }
+    
+    .info_perfil p {
+        font-size: 13px;
+    }
+
+
+    .info_perfil a {
+        color: #3861fb;
+        font-size: 10px;
+        
+    }
+    
+
+
+    .title_conteiner {
+        
+        font-size: 10px;
+    }
+    
+
+  
+
+    .card_info h5 {
+    
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .car_price  {
+        font-size: 9px;
+        text-align: center;
+    }
+    
+
+    
+   
+    .card_info a {        
+        font-size: 8px;
+    }
+
+    .img_at {
+    width: 100%;
+    object-fit: cover;
+    
+    }
+    
+  
+}
