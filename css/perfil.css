@@ -436,10 +436,10 @@ input[type="text"]::placeholder {
 /*FOOTER*/
 
 
-/*--------------------------------------------------------------------------------*/
+/*----------------------------INICIO MEDIA PARA DESKTOP----------------------------------------------------*/
 
 
-/* MEDIA PARA DESKTOP */
+
 
 @media screen and (max-width: 1024px ) {
 
@@ -452,107 +452,14 @@ input[type="text"]::placeholder {
     }
     
     
-    
-    /*HEDER*/
-    
-    .page_header {
-        
-        
-        background-color: rgba(255, 255, 255, 0.895);
-        position: sticky;
-        top: 0;
-        z-index: 110;
-        border-bottom: solid 1.5px rgb(185, 185, 185);
-    }
-    
-    .navbar {
-        
-        padding: 0.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-    }
-    .logo_conteiner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        
-    }
-    
-    .navbar .navbar_menu {
-        display: flex;
-        gap: var(--spacing-12);
-    }
+}
 
- 
-      /* Parte direita (informações de perfil e actualizar datos) */
-    
-      
-      
-      #perfil {
-              
-        font-size: 15px;
-        
-    }
-    
-      .info_perfil a {
-        color: #3861fb;
-        font-size: 13px;
-        
-    }
-    
-    
-    /* FIN PERFIL*/
-    
-    
-    
-    /*FAVORITOS*/
-    
-    
-    .title_conteiner {
-        
-        font-size: 15px;
-    }
-    
-  
-
-    .card h5 {
-    
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .car_price{
-        font-size: 14px;
-        text-align: center;
-    }
-    
-
-    
-   
-    .card_info a {        
-        font-size: 12px;
-    }
-    
-  
-    }
-    
-    /*FIN FAVORITOS*/
-    
-    
-    
-    
-
+/*----------------------------FIN MEDIA PARA DESKTOP----------------------------------------------------*/
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
 
       
-    
-    
-    /* Container principal Perfil */
-    
+       
     
     .container {
         max-width: 100%;
@@ -580,13 +487,102 @@ input[type="text"]::placeholder {
     }
     
     }
-    /* FIN MEDIA ----------------------------------------------*/
-    
-    
-    
 
+
+    /* -------------------- FIN MEDIA TABLET---------------------------------------------*/
+    
+    
+    
+/* ----------------------INICIO MEDIA MOBILE ----------------------------------------------*/
 
 @media screen and (min-width: 376px) and (max-width: 767px) {
+
+    .conteiner {
+        max-width: 100%;
+        margin:0 auto;
+        padding: 0 1rem;
+    }
+    
+
+        /*HEADER*/
+    
+        .page_header {
+            background-color: rgba(255, 255, 255, 0.895);
+            position: sticky;
+            top: 0;
+            z-index: 110;
+            border-bottom: solid 1.5px rgb(185, 185, 185);
+        }
+        
+        .navbar {
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+        .logo_conteiner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            
+        }
+        
+        .navbar .navbar_menu {
+            display: flex;
+            gap: var(--spacing-12);
+        }
+        
+        
+        .logo {
+            object-fit: contain;
+            width: 50px;
+            height: 45px;
+        }
+        
+        .page_header .navbar .navbar_menu .navbar_Item {
+            font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 10px;
+            font-weight: 510;
+        }
+        .container_user_section {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .page_header .user_section {
+            font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            font-size: 10px;
+            color: rgb(56, 97, 251);
+            padding:0.2rem 0.6rem;
+            border: solid 2px rgb(56, 97, 251);
+            border-radius: 1.2rem;
+        }
+        .page_header #sing_up {
+            color: #ffffff;   
+            background: rgb(56, 97, 251);
+            border: none;
+        }
+        
+        
+        /*cambiar a display block cuando se inicia sesion o se regitro*/
+        
+        
+        #profile{
+            display: block;
+        }
+        
+        .page_header  .user_section:hover {
+            transform: scale(1.05);
+        }
+        
+        .navbar_menu a:hover {
+            font-weight: 600;
+            color: #3861fb;
+        }
+        
+        /*HEDER*/
 
     .foto_usuario {
         width: 100%;
@@ -602,7 +598,8 @@ input[type="text"]::placeholder {
     }
     
     .info_perfil p {
-        font-size: 13px;
+        font-size: 11px;
+        
     }
 
 
@@ -641,10 +638,86 @@ input[type="text"]::placeholder {
     }
 
     .img_at {
-    width: 100%;
+    width: 100%;    
     object-fit: cover;
     
     }
+
+    /* INICIO FOOTER*/
+ 
+    .footer_section .fotter_column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .footer_column_title {
+        font-weight: 400;
+        font-size: 10px;
+        color: var(--light-bg-solid);
+        margin-bottom: 0.8rem;
+    }
+    
+    .footer_section_social {
+        text-align: center;
+        padding: 0.5rem 0;
+        font-size: 10px;
+    }
+    
+    .social_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem 0;
+        gap: var(--spacing-12);
+        
+    }
+
+   
+
+    .footer_page li a {
+        font-size: 10px;
+    }
     
   
+    
+    .footer_page .social_links a,
+    .footer_page .footer_section_social span {
+        color: #bbbb;
+    }
+    
+    .social_links li a {
+        font-size: 1.5rem;
+    }
+    
+    .footer_section .logo_conteiner .logo {
+        width: 50px;
+        height: 40px;
+    }
+    
+    .footer_section .logo_conteiner:hover {
+        scale: 1.2;
+    }
+    
+    .footer_page .footer_section .fotter_column li a:hover {
+        color: var(--light-bg-solid);
+    }
+    
+    .social_links .social_fb:hover {
+        color: #4889d4;
+    }
+    
+    .social_links .social_tw:hover {
+        color: var(--light-bg-solid);
+    }
+    
+    .social_links .social_yt:hover {
+        color: #d61111;
+    }
+    
+    /*FOOTER*/
+
+   
 }
+
+/* ----------------------FIN MEDIA MOBILE ----------------------------------------------*/
