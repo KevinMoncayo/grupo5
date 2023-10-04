@@ -1,3 +1,7 @@
+@import url(/css/header.css);
+@import url(/css/footer.css);
+@import url(/css/styles.css);
+
 *{
     margin: 0;
     padding: 0;

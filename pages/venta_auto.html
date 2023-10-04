@@ -3,42 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/estilos_venta_auto.css">
     <title>venta_auto</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1>
-            <a href="../index.html"><img src="../img/logo.png" alt="logo website" height="64" ></a>
-            
-            Garage Car
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Garage</a>
-                </li>
-                <li>
-                    <a href="venta_auto.html">Vendé tu auto</a>
-                </li>
-                <li>
-                    <a href="">Registro usuario</a>
-                </li>
-                <li>
-                    <a href="../pages/perfil.html">Perfil</a>
-                </li>
-                <li>
-                    <a href="">Login</a>
-                </li>
-                <li id="boton_especial">
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
+    
+    <header class="page_header">
+        <nav class="navbar conteiner">
+            <picture class="logo_conteiner">
+                <a href="../index.html">
+                    <img class="logo" src="../img/logo white.png" alt="Logo">
+                </a>
+            </picture>
+            <ul class="navbar_menu">
+                <li><a href="../index.html" class="navbar_Item">Inicial</a></li>
+                <li><a href="../pages/garage.html" class="navbar_Item">Garage</a></li>
+                <li><a href="../pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
+                <li><a href="../pages/contacto.html" class="navbar_Item">Contacto</a></li>
             </ul>
+            <div class="container_user_section">
+                <button id="login" class="user_section" href="../pages/login.html">Inicial Sesion</button>
+                <button id="sing_up" class="user_section" href="../pages/registro_user.html">Registrarse</button>
+                <button id="profile" class="user_section" href="../pages/perfil.html">Perfil</button>
+            </div>
         </nav>
     </header>
+
+
     <h2 id="titulo">
         Proceso de venta
     </h2>
@@ -113,9 +106,45 @@
             </fieldset>
         </form>
     </section>
-    <footer class="pie_de_pagina">
-        <p>Aquí va el pié de página</p>
+
+    <footer class="footer_page">
+        <div class="footer_section conteiner">
+            <a class="logo_conteiner" href="index.html">
+                <img class="logo" src="../img/logo white.png" alt="Logo">
+            </a>
+            <ul class="fotter_column">
+                <span class="footer_column_title">¿NECESITA AYUDA?</span>
+                <li><a>Contacto</a></li>
+                <li><a>Preguntas frecuentes</a></li>
+                <li><a>Concesionarios</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">ATENCION AL CLIENTE</span>
+                <li><a>0800 700-1234</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">CONDICIONES LEGALES</span>
+                <li><a>Politicas de privacidad</a></li>
+                <li><a>Menciones Legales</a></li>
+            </ul>
+        </div>
+        <div class="footer_section_social conteiner">
+            <ul class="social_links">
+                <span>Segui a ATM en nuestras redes sociales:</span>
+                <li>
+                    <a href="https://www.facebook.com" class="social_fb"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" class="social_tw"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" class="social_yt"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+            <span>@Copyright ATM Todos los derechos reservados.</span>
+        </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/bfabf78837.js" crossorigin="anonymous"></script>
 </body>
 </html>
