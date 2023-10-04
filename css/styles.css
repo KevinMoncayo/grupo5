@@ -99,4 +99,11 @@ input[type="text"]::placeholder {
 .conteiner {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 767px) {
+    .conteiner{
+        padding:0 1rem;
+    }
 }

@@ -1,4 +1,3 @@
-
 /*HEDER*/
 .page_header {
     background-color: rgba(255, 255, 255, 0.895);
@@ -9,12 +8,11 @@
 }
 
 .navbar {
-    padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
 }
+
 .logo_conteiner {
     display: flex;
     justify-content: center;
@@ -36,38 +34,55 @@
 }
 
 .page_header .navbar .navbar_menu .navbar_Item {
-    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     font-weight: 510;
 }
+
 .container_user_section {
     display: flex;
     gap: 0.5rem;
 }
+
 .page_header .user_section {
-    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     font-size: 0.8rem;
     color: rgb(56, 97, 251);
-    padding:0.2rem 0.6rem;
+    padding: 0.2rem 0.6rem;
     border: solid 2px rgb(56, 97, 251);
     border-radius: 1.2rem;
 }
+
 .page_header #sing_up {
-    color: #ffffff;   
+    color: #ffffff;
     background: rgb(56, 97, 251);
     border: none;
 }
+
 /*cambiar a display block cuando se inicia sesion o se regitro*/
-#profile{
+#profile {
     display: none;
 }
 
-.page_header  .user_section:hover {
+.page_header .user_section:hover {
     transform: scale(1.05);
 }
 
 .navbar_menu a:hover {
     font-weight: 600;
     color: #3861fb;
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+@media (max-width: 767px) {
+    .navbar{
+        display: none;
+    }
 }
