@@ -10,11 +10,7 @@
 #notices {
     position: relative;
     padding: 0;
-    margin: 0 auto;
-    width: 950px;
-    max-width: 100%;
     overflow: hidden;
-    background-color: #ffffff;
     box-shadow: 6px 6px 6px 6px #00000014;
     border-radius: 15px;
 }
@@ -71,18 +67,20 @@
     text-align: center;
 }
 
-.notice_wrapper img {
+.notice_wrapper .visible {
     display: block;
     height: auto;
     max-height: 400px;
+}
+.notice_wrapper .oculta {
+    display: none;
 }
 
 .notice_text {
     position: absolute;
     top: 50%;
-    width: 30%;
-    height: 20%;
-    left: 25%;
+    width: 60%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: white;
     padding: 0;
@@ -90,17 +88,14 @@
 
 .notice_link {
     position: absolute;
-    top: 60%;
-    left: 25%;
+    top: 65%;
+    left: 29%;
     transform: translate(-50%, -50%);
     padding: 0.5rem;
-    border: solid var(--light-bg-solid);
+    border: solid 2px var(--light-bg-solid);
     background-color: transparent;
     color: var(--light-bg-solid);
-}
-
-.notice_text h2 {
-    font-size: 6.8rem;
+    font-weight: 500;
 }
 
 .text_notice_conteiner {
@@ -122,8 +117,8 @@
     align-items: center;
     justify-content: center;
     bottom: 1.6rem;
-    left: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.7);
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.297);
     gap: 1rem;
     margin: 0;
     padding: 0.5rem 1rem;
@@ -152,18 +147,20 @@
 }
 
 .notice_link:hover {
-    scale: 1.1;
-    left: 27%;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
 
 /*AUTOS POR MARCA*/
-.content_slide_logo{
+.content_slide_logo {
     width: 100%;
     background-color: #3374db;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 .car_by_brand {
     padding: 2rem 0;
     background-color: #5e8bd8;
@@ -176,15 +173,20 @@
 }
 
 #slider_logo {
-    margin: 0 auto;
-    width: 70%;
-    background-color: #ffffff;
-    box-shadow: 6px 6px 6px 6px #00000014;
-    border-radius: 15px;
+    display: flex;
+    justify-content: center;
 }
+
 
 #slider_logo input[type=radio] {
     display: none;
+}
+
+.flex_cont {
+    background-color: white;
+    width: 500px;
+    min-width: 180px;
+    border-radius: 1rem;
 }
 
 #controls {
@@ -274,8 +276,8 @@
 
 #bullets label {
     display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
     background: #949494;
 }
 
@@ -412,9 +414,10 @@
     padding: 2rem 0;
 }
 
-#compare_car_info{
+#compare_car_info {
     margin: 2rem 0;
 }
+
 .compare_car_conteiner {
     width: 100%;
     max-width: 1000px;
@@ -467,6 +470,7 @@
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
         gap: 1.2rem;
     }
+
     #bullets label {
         width: 1rem;
         height: 1rem;
@@ -474,36 +478,70 @@
 }
 
 @media (max-width: 767px) {
+    header {
+        display: none;
+    }
+
+    .text_notice_conteiner {
+        clip-path: polygon(50% 60%, 0 50%, 0 100%, 100% 100%, 100% 50%);
+        width: 100%;
+        left: 50%;
+        background: linear-gradient(0deg, rgba(30,34,47,1) 33%, rgba(30,34,47,0.8267682072829132) 37%, rgba(30,34,47,0.6222864145658263) 40%, rgba(30,34,47,0.4766281512605042) 44%);
+
+    }
+    .notice_wrapper .visible {
+        display: none;
+    }
+    .notice_wrapper .oculta {
+        display: block;
+    }
+    
+    h2 {
+        font-size: 1rem;
+    }
+
     #slider_logo {
         min-width: 50%;
     }
+
     #bullets label {
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 1rem;
+        height: 1rem;
     }
-    #slides_logo .slide_logo{
+
+    #slides_logo .slide_logo {
         padding: 0.5rem;
     }
+
     #labels_container {
         padding: 0.2rem 0.5rem;
-        left: 1rem;
+        bottom: 3%;
+        left: 3%;
     }
-    
+
     #labels_container label {
         width: 1.2rem;
         height: 0.4rem;
     }
-    .slide-content{
+
+    .slide-content {
         gap: 0.5;
     }
+
     .notice_text {
-        font-size: small;
+        width: 100%;
+        top: 69%;
+        left: 50%;
+        font-size: medium;
     }
 
     .notice_link {
+        font-weight: 500;
+        width: 80%;
+        top: 82%;
+        left: 50%;
+        padding: 0.4rem;
         font-size: small;
-        left: 32%;
-        padding: 0.3rem;
     }
 
 
@@ -537,17 +575,14 @@
     }
 
     .compare_car_conteiner {
-        border-radius: 1.7rem;
+        border-radius: 1rem;
     }
 
     .compare_conteiner_img {
         flex-direction: row-reverse;
     }
 
-    .compare_conteiner_img img {
-        width: 90%;
-    }
-    .compare_select_info_link{
-        font-size: 0.8rem;
+    .compare_select_info_link {
+        font-size: unset;
     }
 }

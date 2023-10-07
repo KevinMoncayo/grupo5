@@ -1,4 +1,3 @@
-
 /*FOOTER*/
 .footer_page {
     background-color: #000000;
@@ -28,8 +27,10 @@
 }
 
 .footer_section_social {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding-bottom: 1rem ;
+    padding-bottom: 1rem;
 }
 
 .social_links {
@@ -48,10 +49,12 @@
 .social_links .social_media_container li a {
     font-size: 1.5rem;
 }
-.social_media_container{
+
+.social_media_container {
     display: flex;
     gap: 1rem;
 }
+
 .footer_section .logo_conteiner .logo {
     width: 90px;
     height: 70px;
@@ -76,35 +79,33 @@
 .social_links .social_yt:hover {
     color: #d61111;
 }
-@media (min-width: 1024px) {
-   
-}
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    
-}
+@media (min-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 1023px) {}
 
 @media (max-width: 767px) {
-   
-    .footer_section .logo_conteiner  {
-        margin: 1rem 0;
-        padding: 0.5rem;
-    }
-    .footer_section .logo_conteiner .logo {
-       height: 80px;
-    }
-    .footer_section{
-       flex-direction: column;
-       padding: 0.5rem  0;
-       align-items: center;
-    }
-    .footer_section .fotter_column{
-        align-items: center;
-        padding: 0.5rem 0;
-    }
-    .social_links{
+    .footer_section {
         flex-direction: column;
+        padding: 1.5rem 0;
+        align-items: flex-start;
+    }
+
+    .footer_section_social {
+        align-items: flex-start;
+    }
+
+    .footer_column_title {
+        margin-top: 0.8rem;
+    }
+
+    .footer_section .logo_conteiner .logo {
+        height: 60px;
+    }
+
+    .social_links {
+        flex-direction: column;
+        align-items: flex-start;
         gap: 0.5rem;
     }
-    
 }

@@ -38,8 +38,8 @@
         </section>
     </header>
     <main>
-        <section class="notices_posters conteiner">
-            <div id="notices">
+        <section class="notices_posters">
+            <div id="notices" class="conteiner">
                 <input type="radio" name="notice_poster" id="notice1" checked>
                 <input type="radio" name="notice_poster" id="notice2">
                 <input type="radio" name="notice_poster" id="notice3">
@@ -49,31 +49,35 @@
                     <ul class="inner_container">
                         <li class="notice_wrapper slide1">
                             <div class="text_notice_conteiner">
-                                <h2 class="notice_text">AVISO 1</h2>
+                                <h2 class="notice_text">MODELOS DEPORTIVOS</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
-                            <img src="img/index_posters/poster_1.jpeg" alt="auto 1">
+                            <img src="img/index_posters/poster_1.jpeg" alt="auto fondo 1" class="visible">
+                            <img src="img/index_posters/poster_5.png" alt="auto 1" class="oculta">
                         </li>
                         <li class="notice_wrapper slide_2">
                             <div class="text_notice_conteiner">
-                                <h2 class="notice_text">AVISO 2</h2>
+                                <h2 class="notice_text">LOS AUTOS MAS BUSCADOS</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
-                            <img src="img/index_posters/poster_3.jpeg" alt="auto 2">
+                            <img src="img/index_posters/poster_2.jpeg" alt="auto fondo 2" class="visible">
+                            <img src="img/index_posters/poster_6.png" alt="auto 1" class="oculta">
                         </li>
                         <li class="notice_wrapper slide_3">
                             <div class="text_notice_conteiner">
-                                <h2 class="notice_text">AVISO 3</h2>
+                                <h2 class="notice_text">PRECIOS JUSTOS</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
-                            <img src="img/index_posters/poster_4.jpg" alt="auto3 3">
+                            <img src="img/index_posters/poster_3.jpg" alt="auto fondo 3" class="visible">
+                            <img src="img/index_posters/poster_7.png" alt="auto 1" class="oculta">
                         </li>
                         <li class="notice_wrapper slide_4">
                             <div class="text_notice_conteiner">
-                                <h2 class="notice_text">AVISO 4</h2>
+                                <h2 class="notice_text">7 AÑOS EN EL NEGOCIO</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
-                            <img src="img/index_posters/poster_2.jpg" alt="auto4 4">
+                            <img src="img/index_posters/poster_4.jpg" alt="auto fondo 4" class="visible">
+                            <img src="img/index_posters/poster_8.png" alt="auto 1" class="oculta">
                         </li>
                     </ul>
                 </div>
@@ -89,54 +93,56 @@
 
         <section class="car_by_brand">
             <section class="conteiner">
-                <h2 class="select_brand_text">SELECIONE POR MARCA</h2>
+                <h2 class="select_brand_text">ENCUENTRA TU MARCA FAVORITA</h2>
                 <div id="slider_logo">
-                    <input type="radio" name="slider_logo" id="slide_logo1" checked>
-                    <input type="radio" name="slider_logo" id="slide_logo2">
-                    <input type="radio" name="slider_logo" id="slide_logo3">
-                    <input type="radio" name="slider_logo" id="slide_logo4">
-                    <div id="slides_logo">
-                        <ul class="inner">
-                            <li class="slide_logo slide_1">
-                                <ul class="slide-content">
-                                    <li class="conteiner_brand"><img src="img/logos/audi.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/toyota.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/bmw.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/citroen.svg" alt=""></li>
-                                </ul>
-                            </li>
-                            <li class="slide_logo slide_2">
-                                <ul class="slide-content">
-                                    <li class="conteiner_brand"><img src="img/logos/ford.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/fiat.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/jeep-9.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/honda.svg" alt=""></li>
-                                </ul>
-                            </li>
-                            <li class="slide_logo slide_3">
-                                <ul class="slide-content">
-                                    <li class="conteiner_brand"><img src="img/logos/lamborghini.svg"></li>
-                                    <li class="conteiner_brand"><img src="img/logos/peugeot.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/nissan.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/mitsubishi.svg" alt=""></li>
-                                </ul>
-                            </li>
-                            <li class="slide_logo slide_4">
-                                <ul class="slide-content">
-                                    <li class="conteiner_brand"><img src="img/logos/volkswagen.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/bugatti.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/ferrari.svg" alt=""></li>
-                                    <li class="conteiner_brand"><img src="img/logos/mercedes_Benz.svg" alt=""></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="bullets">
-                        <label for="slide_logo1"></label>
-                        <label for="slide_logo2"></label>
-                        <label for="slide_logo3"></label>
-                        <label for="slide_logo4"></label>
-                    </div>
+                    <section class="flex_cont">
+                        <input type="radio" name="slider_logo" id="slide_logo1" checked>
+                        <input type="radio" name="slider_logo" id="slide_logo2">
+                        <input type="radio" name="slider_logo" id="slide_logo3">
+                        <input type="radio" name="slider_logo" id="slide_logo4">
+                        <div id="slides_logo">
+                            <ul class="inner">
+                                <li class="slide_logo slide_1">
+                                    <ul class="slide-content">
+                                        <li class="conteiner_brand"><img src="img/logos/audi.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/toyota.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/bmw.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/citroen.svg" alt=""></li>
+                                    </ul>
+                                </li>
+                                <li class="slide_logo slide_2">
+                                    <ul class="slide-content">
+                                        <li class="conteiner_brand"><img src="img/logos/ford.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/fiat.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/jeep-9.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/honda.svg" alt=""></li>
+                                    </ul>
+                                </li>
+                                <li class="slide_logo slide_3">
+                                    <ul class="slide-content">
+                                        <li class="conteiner_brand"><img src="img/logos/lamborghini.svg"></li>
+                                        <li class="conteiner_brand"><img src="img/logos/peugeot.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/nissan.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/mitsubishi.svg" alt=""></li>
+                                    </ul>
+                                </li>
+                                <li class="slide_logo slide_4">
+                                    <ul class="slide-content">
+                                        <li class="conteiner_brand"><img src="img/logos/volkswagen.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/bugatti.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/ferrari.svg" alt=""></li>
+                                        <li class="conteiner_brand"><img src="img/logos/mercedes_Benz.svg" alt=""></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="bullets">
+                            <label for="slide_logo1"></label>
+                            <label for="slide_logo2"></label>
+                            <label for="slide_logo3"></label>
+                            <label for="slide_logo4"></label>
+                        </div>
+                    </section>
                 </div>
             </section>
         </section>
@@ -224,7 +230,8 @@
                 <div class="compare_car_flex">
                     <div class="compare_text">
                         <h2 class="title_compare">COMPARA AUTOS</h2>
-                        <p id="compare_car_info"> En [Nombre de tu Sitio], simplificamos tu búsqueda de un auto.Compara precios y
+                        <p id="compare_car_info"> En ATM, simplificamos tu búsqueda de un auto.Compara
+                            precios y
                             características de una amplia selección de vehículos en un solo lugar. Encuentra tu auto
                             ideal
                             con facilidad. ¡Realiza tu comparacion ahora! </p>
