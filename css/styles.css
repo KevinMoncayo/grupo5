@@ -24,7 +24,7 @@
     --ligth-bg2-solid: #e9e5e5;
 
     /* Typography */
-    --base-font: 'Inter', sans-serif;
+    --base-font: Arial, Helvetica, sans-serif;
     --alternative-font: 'Raleway', sans-serif;
 
     /* Font-sizes */
@@ -58,26 +58,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-html {
-    font-family: var(--base-font);
-    color: var(--dark-solid);
+body{
+    font-family: 'Roboto', sans-serif;
 }
-
 span {
     color: var(--dark-solid);
 }
 
 a {
     text-decoration: none;
-    font-family: inherit;
     color: var(--dark-solid);
     cursor: pointer;
 }
 
 .page_header,
 footer {
-    font-family: var(--alternative-font);
     color: var(--light-font-solid);
 }
 
@@ -92,7 +87,6 @@ img {
 
 input[type="text"]::placeholder {
     color: var(--dark-300);
-    font-family: var(--base-font);
     font-weight: 500;
 }
 

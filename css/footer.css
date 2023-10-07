@@ -95,7 +95,7 @@
     }
     .footer_section{
        flex-direction: column;
-       padding: 1.5rem 0;
+       padding: 0.5rem  0;
        align-items: center;
     }
     .footer_section .fotter_column{

@@ -97,12 +97,9 @@
     border: solid var(--light-bg-solid);
     background-color: transparent;
     color: var(--light-bg-solid);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
 }
 
 .notice_text h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 6.8rem;
 }
 
@@ -160,21 +157,27 @@
 }
 
 /*AUTOS POR MARCA*/
+.content_slide_logo{
+    width: 100%;
+    background-color: #3374db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .car_by_brand {
     padding: 2rem 0;
-    background-color: #e1e1e175;
+    background-color: #5e8bd8;
 }
 
 .select_brand_text {
     text-align: center;
     padding: 10px 0;
+    color: #ffffff;
 }
 
 #slider_logo {
-    padding: 10px 0;
     margin: 0 auto;
-    width: 800px;
-    max-width: 100%;
+    width: 70%;
     background-color: #ffffff;
     box-shadow: 6px 6px 6px 6px #00000014;
     border-radius: 15px;
@@ -217,18 +220,14 @@
 
 .slide-content {
     display: flex;
-    gap: 30px;
-    width: 100%;
-    padding: 10px;
+    gap: 0.8rem;
     justify-content: center;
-    align-items: center;
 }
 
 .conteiner_brand {
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 6rem;
 }
 
 .conteiner_brand:hover {
@@ -260,7 +259,8 @@
 
 #slides_logo .slide_logo {
     width: 25%;
-    display: flex;
+    height: 100%;
+    padding: 1rem 0.5rem;
 }
 
 
@@ -268,16 +268,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin: 10px 0;
-    padding: 10px 0 0 0;
-
+    gap: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 #bullets label {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 1.2rem;
+    height: 1.2rem;
     background: #949494;
 }
 
@@ -313,24 +311,27 @@
 
 .grid_col {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
     gap: 1.5rem;
 }
 
 .segment_content {
-    box-shadow: 6px 6px 6px 6px #00000014;
+    box-shadow: 4px 4px 4px 4px #00000014;
     border-radius: 1rem;
     text-align: center;
-    align-items: center;
+}
+
+.segment_content h3 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .segment_content img {
-    height: 70%;
+    padding: 0.5rem 0;
 }
 
 .segment_content:hover {
-    transform: scale(1.1);
-    box-shadow: 6px 6px 6px 6px #0e007a41;
+    transform: scale(1.05);
 }
 
 
@@ -402,18 +403,18 @@
 
 /*COMPARE CAR*/
 
-.compare_car {
-    margin: 3rem 0;
-    position: relative;
-    text-align: center;
+.compare_car_flex {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
 }
 
-.compare_text {
-    padding: 1rem;
+#compare_car_info{
+    margin: 2rem 0;
 }
-
 .compare_car_conteiner {
     width: 100%;
     max-width: 1000px;
@@ -428,6 +429,9 @@
 .compare_conteiner_img {
     display: flex;
     justify-content: center;
+    background-color: #75a6fb;
+    background-image: linear-gradient(359deg, #75a6fb 0%, #5887da 20%, #3374db 40%, #3374db 60%, #5887da 79%, #75a6fb 100%);
+    display: flex;
 }
 
 .compare_conteiner_img img {
@@ -436,75 +440,84 @@
 
 .compare_select_info_link {
     padding: 0.5rem;
-    border: solid var(--light-bg-solid);
-    background-color: transparent;
+    border: solid 3px var(--light-bg-solid);
+    background-color: rgb(0 0 0 / 59%);
     color: var(--light-bg-solid);
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: x-large;
 }
 
 .compare_info_container {
     position: absolute;
     height: 100%;
     width: 100%;
-    transform: translate(-0%, -0%);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 40%, rgb(0 0 0 / 10%) 42%, rgb(0 0 0 / 60%) 47%, rgb(0 0 0) 50%, rgb(0 0 0 / 60%) 53%, rgb(0 0 0 / 10%) 58%, rgba(0, 0, 0, 0) 60%);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0000002c;
 }
 
 .compare_car_conteiner .compare_select_info_link:hover {
     scale: 1.1;
 }
 
-@media (min-width: 1024px) {
- 
-}
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    
-}
-
-@media (max-width: 767px) {
-    #labels_container{
-        padding: 0.2rem 0.5rem;
+    .grid_col {
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        gap: 1.2rem;
     }
-    #labels_container label{
-        width: 1.2rem;
-        height: 0.4rem;
-    }
-    .notice_text{
-        font-size: small;
-    }
-    .notice_link{
-        font-size: small;
-        left: 35%;
-    }
-    #slider_logo{
-        width: 80%;
-    }
-    .slide-content{
-        gap: 1rem;
-    }
-    .conteiner_brand{
-        height:5em;
-    }
-    #bullets {
-        padding: 0;
-        margin: 0;
-    }
-    #bullets label{
+    #bullets label {
         width: 1rem;
         height: 1rem;
     }
-    .car_body_type_title{
+}
+
+@media (max-width: 767px) {
+    #slider_logo {
+        min-width: 50%;
+    }
+    #bullets label {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    #slides_logo .slide_logo{
+        padding: 0.5rem;
+    }
+    #labels_container {
+        padding: 0.2rem 0.5rem;
+        left: 1rem;
+    }
+    
+    #labels_container label {
+        width: 1.2rem;
+        height: 0.4rem;
+    }
+    .slide-content{
+        gap: 0.5;
+    }
+    .notice_text {
+        font-size: small;
+    }
+
+    .notice_link {
+        font-size: small;
+        left: 32%;
+        padding: 0.3rem;
+    }
+
+
+    .car_body_type_title {
         padding: 1rem 0;
     }
+
+
     .grid_col {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        gap: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+        gap: 0.9rem;
     }
-    .grid_col .segment_content h3{
+
+    .grid_col .segment_content h3 {
         font-size: 0.7rem;
     }
 
@@ -522,14 +535,19 @@
     .card {
         margin: 1rem 2rem;
     }
+
     .compare_car_conteiner {
         border-radius: 1.7rem;
     }
+
     .compare_conteiner_img {
         flex-direction: row-reverse;
     }
 
     .compare_conteiner_img img {
         width: 90%;
+    }
+    .compare_select_info_link{
+        font-size: 0.8rem;
     }
 }

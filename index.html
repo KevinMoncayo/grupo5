@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Venta de Autos</title>
@@ -12,24 +15,27 @@
 
 <body>
     <header class="page_header">
-        <nav class="navbar conteiner">
-            <picture class="logo_conteiner">
-                <a href="index.html">
-                    <img class="logo" src="img/logo white.png" alt="Logo">
-                </a>
-            </picture>
-            <ul class="navbar_menu">
-                <li><a href="index.html" class="navbar_Item">Inicial</a></li>
-                <li><a href="pages/garage.html" class="navbar_Item">Garage</a></li>
-                <li><a href="pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
-                <li><a href="pages/contacto.html" class="navbar_Item">Contacto</a></li>
-            </ul>
-            <div class="container_user_section">
-                <button id="login" class="user_section" href="pages/login.html">Inicial Sesion</button>
-                <button id="sing_up" class="user_section" href="pages/registro_user.html">Registrarse</button>
-                <button id="profile" class="user_section" href="pages/perfil.html">Perfil</button>
-            </div>
-        </nav>
+        <section class="conteiner">
+            <nav class="navbar">
+                <picture class="logo_conteiner">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo white.png" alt="Logo">
+                    </a>
+                </picture>
+                <ul class="navbar_menu">
+                    <li><a href="index.html" class="navbar_Item">Inicial</a></li>
+                    <li><a href="pages/garage.html" class="navbar_Item">Garage</a></li>
+                    <li><a href="pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
+                    <li><a href="pages/contacto.html" class="navbar_Item">Contacto</a></li>
+                </ul>
+                <div class="container_user_section">
+                    <button id="login" class="user_section" href="pages/login.html">Inicial Sesion</button>
+                    <button id="sing_up" class="user_section" href="pages/registro_user.html">Registrarse</button>
+                    <button id="profile" class="user_section" href="pages/perfil.html">Perfil</button>
+                </div>
+            </nav>
+        </section>
+        </section>
     </header>
     <main>
         <section class="notices_posters conteiner">
@@ -83,7 +89,7 @@
 
         <section class="car_by_brand">
             <section class="conteiner">
-                <h3 class="select_brand_text">SELECIONE POR MARCA</h3>
+                <h2 class="select_brand_text">SELECIONE POR MARCA</h2>
                 <div id="slider_logo">
                     <input type="radio" name="slider_logo" id="slide_logo1" checked>
                     <input type="radio" name="slider_logo" id="slide_logo2">
@@ -142,39 +148,39 @@
                     <div class="grid_container_content">
                         <div class="grid_col ">
                             <a class="segment_content" href="/catalogo/convertible">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                                <img src="img/car_type/type_1.svg" alt="autos convetibles" />
                                 <h3>Convertible</h3>
                             </a>
                             <a class="segment_content" href="/catalogo/coupe">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                                <img src="img/car_type/type_2.svg" alt="autos convetibles" />
                                 <h3>Coup</h3>
                             </a>
                             <a class="segment_content" href="/catalogo/stationwagon">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                                <img src="img/car_type/type_3.svg" alt="autos convetibles" />
                                 <h3>Familiar</h3>
                             </a>
                             <a class="segment_content" href="/catalogo/hatchback">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                                <img src="img/car_type/type_4.svg" alt="autos convetibles" />
                                 <h3>Hatchback</h3>
                             </a>
                             <a class="segment_content" href="/catalogo/minivan">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                                <img src="img/car_type/type_5.svg" alt="autos convetibles" />
                                 <h3>Monovolumen</h3>
                             </a>
-                            <a class="segment_content">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                            <a class="segment_content" href="/catalogo/minivan">
+                                <img src="img/car_type/type_6.svg" alt="autos convetibles" />
                                 <h3>Pick Up</h3>
                             </a>
                             <a class="segment_content" href="/catalogo/sedan">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                                <img src="img/car_type/type_1.svg" alt="autos convetibles" />
                                 <h3>Sedan</h3>
                             </a>
                             <a class="segment_content" href="/catalogo/suv">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                                <img src="img/car_type/type_2.svg" alt="autos convetibles" />
                                 <h3>SUV</h3>
                             </a>
                             <a class="segment_content" href="/catalogo/van">
-                                <img src="img/car_type/car_1.svg" alt="autos convetibles" />
+                                <img src="img/car_type/type_3.svg" alt="autos convetibles" />
                                 <h3>Utilitario</h3>
                             </a>
                         </div>
@@ -213,18 +219,24 @@
             </section>
         </section>
 
-        <section class="compare_car">
+        <section>
             <section class="conteiner">
-                <div class="compare_text">
-                    <h2 class="title_compare">COMPARA AUTOS</h2>
-                </div>
-                <div class="compare_car_conteiner">
-                    <div class="compare_info_container">
-                        <a class="compare_select_info_link">COMPARAR</a>
+                <div class="compare_car_flex">
+                    <div class="compare_text">
+                        <h2 class="title_compare">COMPARA AUTOS</h2>
+                        <p id="compare_car_info"> En [Nombre de tu Sitio], simplificamos tu búsqueda de un auto.Compara precios y
+                            características de una amplia selección de vehículos en un solo lugar. Encuentra tu auto
+                            ideal
+                            con facilidad. ¡Realiza tu comparacion ahora! </p>
                     </div>
-                    <div class="compare_conteiner_img">
-                        <img src="img/compare_car1.png" alt="car1" />
-                        <img src="img/compare_car2.png" alt="car2" />
+                    <div class="compare_car_conteiner">
+                        <div class="compare_info_container">
+                            <a class="compare_select_info_link">COMPARAR</a>
+                        </div>
+                        <div class="compare_conteiner_img">
+                            <img src="img/comp_car2.png" alt="car1" />
+                            <img src="img/comp_car.png" alt="car2" />
+                        </div>
                     </div>
                 </div>
             </section>
