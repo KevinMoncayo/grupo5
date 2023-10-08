@@ -11,8 +11,7 @@
     position: relative;
     padding: 0;
     overflow: hidden;
-    box-shadow: 6px 6px 6px 6px #00000014;
-    border-radius: 15px;
+    box-shadow: 0 4px 4px 4px #00000014;
 }
 
 #notices input[type=radio] {
@@ -72,6 +71,7 @@
     height: auto;
     max-height: 400px;
 }
+
 .notice_wrapper .oculta {
     display: none;
 }
@@ -233,7 +233,7 @@
 }
 
 .conteiner_brand:hover {
-    scale: 1.2;
+    scale: 1.05;
 }
 
 #slide_logo1:checked~#slides_logo .inner {
@@ -265,6 +265,11 @@
     padding: 1rem 0.5rem;
 }
 
+#slides_logo .inner .slide-content .conteiner_brand .brand_link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 #bullets {
     display: flex;
@@ -294,11 +299,11 @@
 
 /*GRID AUTOS POR TIPO CARROCERIA*/
 .car_body_type {
-    background-color: #ffffff;
+    background-color: #fbfbfb;
+    padding: 2rem 0;
 }
 
 .grid_container {
-    margin: 2rem 0;
     width: 100%;
 }
 
@@ -318,9 +323,10 @@
 }
 
 .segment_content {
-    box-shadow: 4px 4px 4px 4px #00000014;
+    box-shadow: 0 0.063rem 0.313rem #46464626, 0 0.125rem 0.125rem #46464626, 0 0.188rem 0.125rem -0.125rem #46464626;
     border-radius: 1rem;
     text-align: center;
+    background-color: rgb(255, 255, 255);
 }
 
 .segment_content h3 {
@@ -339,7 +345,6 @@
 
 /*AUTOS NUEVOS*/
 .new_cars {
-    background-color: #e1e1e175;
     padding: 1rem 0;
 }
 
@@ -350,6 +355,11 @@
 
 .title_new_auto {
     text-align: center;
+    padding-bottom: 1rem;
+}
+
+#new_cars_info {
+    padding-bottom: 1rem;
 }
 
 .compare_ref {
@@ -360,17 +370,19 @@
 
 
 .car_cards_conteiner {
-    padding: 1rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1.2rem;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-12);
 }
 
 .card {
     overflow: hidden;
     border-radius: 1rem;
-    background-color: var(--light-bg-solid);
+    background-color: rgb(255 255 255);
+    box-shadow: 0 0.063rem 0.313rem #46464626, 0 0.125rem 0.125rem #46464626, 0 0.188rem 0.125rem -0.125rem #46464626;
+    ;
 }
 
 .card:hover {
@@ -379,9 +391,7 @@
 }
 
 .card_info {
-    padding: 0.5rem 0;
-    display: grid;
-    justify-content: center;
+    padding: 0.8rem;
 }
 
 .new_cars .card .card_price {
@@ -391,7 +401,36 @@
 }
 
 .card_title {
-    padding: 0.5rem 0;
+    padding-bottom: 0.5rem;
+    font-size: larger;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.see_details {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0.4rem;
+    border: solid 1px black;
+    border-radius: 0.5rem;
+}
+
+.car_price {
+    font-weight: 600;
+    color: #3374db;
+}
+
+.see_details:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 #at1,
@@ -415,24 +454,21 @@
 }
 
 #compare_car_info {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .compare_car_conteiner {
     width: 100%;
-    max-width: 1000px;
     display: flex;
     position: relative;
     overflow: hidden;
     background-color: var(--dark-light-transparent);
-    box-shadow: 6px 6px 6px 6px #00000014;
     border-radius: 2rem;
 }
 
 .compare_conteiner_img {
     display: flex;
     justify-content: center;
-    background-color: #75a6fb;
     background-image: linear-gradient(359deg, #75a6fb 0%, #5887da 20%, #3374db 40%, #3374db 60%, #5887da 79%, #75a6fb 100%);
     display: flex;
 }
@@ -443,11 +479,11 @@
 
 .compare_select_info_link {
     padding: 0.5rem;
-    border: solid 3px var(--light-bg-solid);
+    border-radius: 0.5rem;
+    border: solid 2px var(--light-bg-solid);
     background-color: rgb(0 0 0 / 59%);
     color: var(--light-bg-solid);
-    font-weight: 500;
-    font-size: x-large;
+    font-size: 1.3rem;
 }
 
 .compare_info_container {
@@ -457,13 +493,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0000002c;
+    background-color: #00000030;
 }
 
 .compare_car_conteiner .compare_select_info_link:hover {
-    scale: 1.1;
+    scale: 1.05;
+    background-color: #000000;
 }
 
+/* VENTA DE AUTO*/
+.sell_car {
+    background-color: #fafafafa;
+}
+
+.sell_car_container {
+    display: flex;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.sell_text_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.cont_img_sell {
+    width: 35%;
+    display: flex;
+}
+
+.title_sell_car {
+    padding-bottom: 1rem;
+}
+
+.sell_link {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: solid 1px #000000;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.conten {
+    display: flex;
+}
+
+.sell_link:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .grid_col {
@@ -486,16 +567,18 @@
         clip-path: polygon(50% 60%, 0 50%, 0 100%, 100% 100%, 100% 50%);
         width: 100%;
         left: 50%;
-        background: linear-gradient(0deg, rgba(30,34,47,1) 33%, rgba(30,34,47,0.8267682072829132) 37%, rgba(30,34,47,0.6222864145658263) 40%, rgba(30,34,47,0.4766281512605042) 44%);
+        background: linear-gradient(0deg, rgba(30, 34, 47, 1) 33%, rgba(30, 34, 47, 0.8267682072829132) 37%, rgba(30, 34, 47, 0.6222864145658263) 40%, rgba(30, 34, 47, 0.4766281512605042) 44%);
 
     }
+
     .notice_wrapper .visible {
         display: none;
     }
+
     .notice_wrapper .oculta {
         display: block;
     }
-    
+
     h2 {
         font-size: 1rem;
     }
@@ -555,32 +638,58 @@
         gap: 0.9rem;
     }
 
-    .grid_col .segment_content h3 {
-        font-size: 0.7rem;
-    }
-
     .car_cards_conteiner {
         flex-direction: column;
-        gap: 0;
-        padding: 0;
-        margin: 0;
+        gap: 1rem;
+    }
+
+    .card_title {
+        font-size: large;
     }
 
     .title_conteiner {
         margin: 0;
     }
 
-    .card {
-        margin: 1rem 2rem;
+    /*VENDE TU AUTO*/
+    .sell_car_container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
     }
 
+    .sell_text_container {
+        width: 100%;
+    }
+
+    .title_sell_car {
+        text-align: center;
+    }
+
+    #car_sell_info {
+        text-align: center;
+    }
+
+    .cont_img_sell {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .seell_img {
+        width: 40%;
+        min-width: 200px;
+    }
+
+    .conten {
+        justify-content: center;
+    }
+
+    /*COMPARE CAR*/
     .compare_car_conteiner {
         border-radius: 1rem;
     }
 
-    .compare_conteiner_img {
-        flex-direction: row-reverse;
-    }
 
     .compare_select_info_link {
         font-size: unset;

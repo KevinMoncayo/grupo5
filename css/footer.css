@@ -93,6 +93,7 @@
 
     .footer_section_social {
         align-items: flex-start;
+        border-top: solid 2px rgba(255, 255, 255, 0.744);
     }
 
     .footer_column_title {

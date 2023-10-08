@@ -35,9 +35,8 @@
 }
 
 .page_header .navbar .navbar_menu .navbar_Item {
-    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    font-weight: 510;
+    font-size: large;
+    font-weight: 700;
 }
 
 .container_user_section {
@@ -46,8 +45,7 @@
 }
 
 .page_header .user_section {
-    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.8rem;
     color: rgb(56, 97, 251);
     padding: 0.2rem 0.6rem;
