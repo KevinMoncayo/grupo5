@@ -1,185 +1,18 @@
-:root {
-    /* Palette */
-    /**/
-    --primary-solid: #FF3333;
-    --primary-900: rgba(255, 51, 51, 0.9);
-    --primary-500: rgba(255, 51, 51, 0.5);
-    --primary-300: rgba(255, 51, 51, 0.3);
-
-    --secondary-solid: #1D84B5;
-    --secondary-900: rgba(65, 165, 211, 0.83);
-    --secondary-500: rgba(72, 184, 235, 0.806);
-    --secondary-300: rgb(59, 160, 207);
-
-    --dark-solid: #1F1F1F;
-    --dark-900: rgb(31, 31, 31, 0.9);
-    --dark-500: rgb(31, 31, 31, 0.5);
-    --dark-300: rgb(31, 31, 31, 0.3);
-
-    --dark-light-transparent:#e1e1e172;
-    --dark-light-solid: #bbbb;
-    --dark-bg-solid: #30343F;
-    --light-bg-solid: #FAFAFF;
-    --light-font-solid: #ffffff;
-    --ligth-bg2-solid: #e9e5e5;
-
-    /* Typography */
-    --base-font: 'Inter', sans-serif;
-    --alternative-font: 'Raleway', sans-serif;
-
-    /* Font-sizes */
-    --font-display: 4.6em;
-    --font-jumbo: 3.8em;
-    --font-xlarge: 3em;
-    --font-large: 2.4em;
-    --font-medium: 2.0em;
-    --font-small: 1.6em;
-    --font-xsmall: 1.4em;
-
-    /* Spacings */
-    --spacing-128: 12.8rem;
-    --spacing-68: 6.8rem;
-    --spacing-48: 4.8rem;
-    --spacing-36: 3.6rem;
-    --spacing-28: 2.8rem;
-    --spacing-24: 2.4rem;
-    --spacing-20: 2rem;
-    --spacing-16: 1.6rem;
-    --spacing-12: 1.2rem;
-    --spacing-8: 0.8rem;
-    --spacing-5: 0.5rem;
-}
-
-/*CSS PREDERMINADOS*/
-
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: var(--base-font);
-    color: var(--dark-solid);
-}
-
-span {
-    color: var(--dark-solid);
-}
-
-a {
-    text-decoration: none;
-    font-family: inherit;
-    color: var(--dark-solid);
-    cursor: pointer;
-}
-
-.page_header,
-footer {
-    font-family: var(--alternative-font);
-    color: var(--light-font-solid);
-}
-
-ul,
-ol {
-    list-style-type: none;
-}
-
-img {
-    width: 100%;
-}
-
-input[type="text"]::placeholder {
-    color: var(--dark-300);
-    font-family: var(--base-font);
-    font-weight: 500;
-}
-
-.conteiner {
-    max-width: 1200px;
-    margin:0 auto;
-    padding: 0 1rem;
-}
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/styles.css);
 
 
 
 /*HEDER*/
 
-.page_header {
-    background-color: rgba(255, 255, 255, 0.895);
-    position: sticky;
-    top: 0;
-    z-index: 110;
-    border-bottom: solid 1.5px rgb(185, 185, 185);
-}
-
-.navbar {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-}
-.logo_conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    
-}
-
-.navbar .navbar_menu {
-    display: flex;
-    gap: var(--spacing-12);
-}
-
-
-.logo {
-    object-fit: contain;
-    width: 50px;
-    height: 45px;
-}
-
-.page_header .navbar .navbar_menu .navbar_Item {
-    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    font-weight: 510;
-}
-.container_user_section {
-    display: flex;
-    gap: 0.5rem;
-}
-.page_header .user_section {
-    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    font-size: 0.8rem;
-    color: rgb(56, 97, 251);
-    padding:0.2rem 0.6rem;
-    border: solid 2px rgb(56, 97, 251);
-    border-radius: 1.2rem;
-}
-.page_header #sing_up {
-    color: #ffffff;   
-    background: rgb(56, 97, 251);
-    border: none;
-}
 /*cambiar a display block cuando se inicia sesion o se regitro*/
 
 #profile{
     display: block;
 }
 
-.page_header  .user_section:hover {
-    transform: scale(1.05);
-}
 
-.navbar_menu a:hover {
-    font-weight: 600;
-    color: #3861fb;
-}
 
 /*HEDER*/
 
@@ -321,6 +154,26 @@ input[type="text"]::placeholder {
     padding: 0.5rem 0;
 }
 
+.img_at {
+
+    padding: 0 1rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+
+}
+
+.card_info {
+
+    box-shadow: 6px 6px 6px 6px #00000014;
+    border-radius: 1rem;
+    text-align: center;
+    align-items: center;
+
+    
+
+}
+
 
 
 /*FIN FAVORITOS*/
@@ -329,111 +182,6 @@ input[type="text"]::placeholder {
 
 
 
-/*FOOTER*/
-
-.footer_page {
-    background-color: #000000;
-    padding: 1.5rem 0 1rem 0;
-}
-.footer_page li a {
-    font-size: 10px;
-}
-
-.fotter_column span {
-    font-size: 12px;
-}
-
-.footer_section_social li a span{
-
-    font-size: 10px;
-}
-
-
-.footer_column_title {
-
-    font-size: 10px;
-}
-
-
-.footer_page .footer_section .fotter_column li a {
-    color: #bbbb;
-}
-
-.footer_section {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 0;
-}
-
-.footer_section .fotter_column {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.footer_column_title {
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--light-bg-solid);
-    margin-bottom: 0.8rem;
-}
-
-.footer_section_social {
-    text-align: center;
-    padding: 0.5rem 0;
-}
-
-.social_links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem 0;
-    gap: var(--spacing-12);
-}
-
-.social_links span {
-    font-size: 12px;
-
-}
-
-.footer_page .social_links a,
-.footer_page .footer_section_social span {
-    color: #bbbb;
-}
-
-.social_links li a {
-    font-size: 1.5rem;
-}
-
-.footer_section .logo_conteiner .logo {
-    width: 90px;
-    height: 70px;
-    
-    
-}
-
-.footer_section .logo_conteiner:hover {
-    scale: 1.2;
-    
-}
-
-.footer_page .footer_section .fotter_column li a:hover {
-    color: var(--light-bg-solid);
-}
-
-.social_links .social_fb:hover {
-    color: #4889d4;
-}
-
-.social_links .social_tw:hover {
-    color: var(--light-bg-solid);
-}
-
-.social_links .social_yt:hover {
-    color: #d61111;
-}
-
-/*FOOTER*/
 
 
 /*----------------------------INICIO MEDIA PARA DESKTOP----------------------------------------------------*/
@@ -629,19 +377,21 @@ input[type="text"]::placeholder {
         font-size: 9px;
         text-align: center;
     }
-    
 
+    .car_cards_conteiner {
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.5rem;
+    }
     
    
     .card_info a {        
         font-size: 8px;
     }
 
-    .img_at {
-    width: 100%;    
-    object-fit: cover;
-    
-    }
+
+
 
     /* INICIO FOOTER*/
  
