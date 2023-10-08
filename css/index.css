@@ -30,7 +30,6 @@
     overflow: hidden;
 }
 
-
 #notice1:checked~#notices_container .inner_container {
     margin-left: 0;
 }
@@ -98,7 +97,7 @@
     font-weight: 500;
 }
 
-.text_notice_conteiner {
+.text_notice_container {
     transform: translate(-50%, -50%);
     position: absolute;
     height: 100%;
@@ -226,13 +225,13 @@
     justify-content: center;
 }
 
-.conteiner_brand {
+.container_brand {
     display: flex;
     justify-content: center;
     width: 6rem;
 }
 
-.conteiner_brand:hover {
+.container_brand:hover {
     scale: 1.05;
 }
 
@@ -265,7 +264,7 @@
     padding: 1rem 0.5rem;
 }
 
-#slides_logo .inner .slide-content .conteiner_brand .brand_link {
+#slides_logo .inner .slide-content .container_brand .brand_link {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -348,7 +347,7 @@
     padding: 1rem 0;
 }
 
-.title_conteiner {
+.title_container {
     margin: 1rem 0;
     text-align: center;
 }
@@ -369,7 +368,7 @@
 }
 
 
-.car_cards_conteiner {
+.car_cards_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 1.2rem;
@@ -457,7 +456,7 @@
     margin: 1rem 0;
 }
 
-.compare_car_conteiner {
+.compare_car_container {
     width: 100%;
     display: flex;
     position: relative;
@@ -466,14 +465,14 @@
     border-radius: 2rem;
 }
 
-.compare_conteiner_img {
+.compare_container_img {
     display: flex;
     justify-content: center;
     background-image: linear-gradient(359deg, #75a6fb 0%, #5887da 20%, #3374db 40%, #3374db 60%, #5887da 79%, #75a6fb 100%);
     display: flex;
 }
 
-.compare_conteiner_img img {
+.compare_container_img img {
     width: 50%;
 }
 
@@ -496,7 +495,7 @@
     background-color: #00000030;
 }
 
-.compare_car_conteiner .compare_select_info_link:hover {
+.compare_car_container .compare_select_info_link:hover {
     scale: 1.05;
     background-color: #000000;
 }
@@ -559,11 +558,9 @@
 }
 
 @media (max-width: 767px) {
-    header {
-        display: none;
-    }
 
-    .text_notice_conteiner {
+    /*NOTICIAS */
+    .text_notice_container {
         clip-path: polygon(50% 60%, 0 50%, 0 100%, 100% 100%, 100% 50%);
         width: 100%;
         left: 50%;
@@ -627,7 +624,7 @@
         font-size: small;
     }
 
-
+    /*TIPO DE CARROCERIA*/
     .car_body_type_title {
         padding: 1rem 0;
     }
@@ -638,7 +635,7 @@
         gap: 0.9rem;
     }
 
-    .car_cards_conteiner {
+    .car_cards_container {
         flex-direction: column;
         gap: 1rem;
     }
@@ -647,7 +644,7 @@
         font-size: large;
     }
 
-    .title_conteiner {
+    .title_container {
         margin: 0;
     }
 
@@ -686,7 +683,7 @@
     }
 
     /*COMPARE CAR*/
-    .compare_car_conteiner {
+    .compare_car_container {
         border-radius: 1rem;
     }
 

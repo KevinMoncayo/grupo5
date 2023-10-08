@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
+    <script defer src="/js/nav_bar.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -15,31 +16,39 @@
 
 <body>
     <header class="page_header">
-        <section class="conteiner">
+        <section class="container">
             <nav class="navbar">
-                <picture class="logo_conteiner">
+                <picture class="logo_container">
                     <a href="index.html">
                         <img class="logo" src="img/logo white.png" alt="Logo">
                     </a>
                 </picture>
-                <ul class="navbar_menu">
-                    <li><a href="index.html" class="navbar_Item">Inicial</a></li>
-                    <li><a href="pages/garage.html" class="navbar_Item">Garage</a></li>
-                    <li><a href="pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
-                    <li><a href="pages/contacto.html" class="navbar_Item">Contacto</a></li>
-                </ul>
-                <div class="container_user_section">
-                    <button id="login" class="user_section" href="pages/login.html">Inicial Sesion</button>
-                    <button id="sing_up" class="user_section" href="pages/registro_user.html">Registrarse</button>
-                    <button id="profile" class="user_section" href="pages/perfil.html">Perfil</button>
+                <div class="navigation_content">
+                    <ul class="nav_menu nav_menu_visible">
+                        <li class="nav_menu_item"><a href="index.html" class="navbar_Item">Inicial</a></li>
+                        <li class="nav_menu_item"><a href="pages/garage.html" class="navbar_Item">Garage</a></li>
+                        <li class="nav_menu_item"><a href="pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a>
+                        </li>
+                        <li class="nav_menu_item"><a href="pages/contacto.html" class="navbar_Item">Contacto</a></li>
+                    </ul>
+                    <div class="container_user_section">
+                        <a id="login" class="user_section" href="pages/login.html">Inicial Sesion</a>
+                        <a id="sing_up" class="user_section" href="/pages/registro_user.html">Registrarse</a>
+                        <a id="profile" class="user_section" href="pages/perfil.html">Perfil</a>
+                    </div>
                 </div>
+                <button class="hamburger">
+                    <div class="hamburger_line1"></div>
+                    <div class="hamburger_line2"></div>
+                    <div class="hamburger_line3"></div>
+                </button>
             </nav>
         </section>
         </section>
     </header>
     <main>
         <section class="notices_posters">
-            <div id="notices" class="conteiner">
+            <div id="notices" class="container">
                 <input type="radio" name="notice_poster" id="notice1" checked>
                 <input type="radio" name="notice_poster" id="notice2">
                 <input type="radio" name="notice_poster" id="notice3">
@@ -48,7 +57,7 @@
                 <div id="notices_container">
                     <ul class="inner_container">
                         <li class="notice_wrapper slide1">
-                            <div class="text_notice_conteiner">
+                            <div class="text_notice_container">
                                 <h2 class="notice_text">MODELOS DEPORTIVOS</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
@@ -56,7 +65,7 @@
                             <img src="img/index_posters/poster_5.png" alt="auto 1" class="oculta">
                         </li>
                         <li class="notice_wrapper slide_2">
-                            <div class="text_notice_conteiner">
+                            <div class="text_notice_container">
                                 <h2 class="notice_text">LOS AUTOS MAS BUSCADOS</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
@@ -64,7 +73,7 @@
                             <img src="img/index_posters/poster_6.png" alt="auto 1" class="oculta">
                         </li>
                         <li class="notice_wrapper slide_3">
-                            <div class="text_notice_conteiner">
+                            <div class="text_notice_container">
                                 <h2 class="notice_text">PRECIOS JUSTOS</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
@@ -72,7 +81,7 @@
                             <img src="img/index_posters/poster_7.png" alt="auto 1" class="oculta">
                         </li>
                         <li class="notice_wrapper slide_4">
-                            <div class="text_notice_conteiner">
+                            <div class="text_notice_container">
                                 <h2 class="notice_text">7 AÑOS EN EL NEGOCIO</h2>
                                 <a class="notice_link">CONOCE MAS</a>
                             </div>
@@ -90,7 +99,7 @@
             </div>
         </section>
         <section class="car_by_brand">
-            <section class="conteiner">
+            <section class="container">
                 <h2 class="select_brand_text">ENCUENTRA TU MARCA FAVORITA</h2>
                 <div id="slider_logo">
                     <section class="flex_cont">
@@ -102,22 +111,22 @@
                             <ul class="inner">
                                 <li class="slide_logo slide_1">
                                     <ul class="slide-content">
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/audi.svg" alt="logo_audi">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/toyota.svg" alt="logo_toyota">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/bmw.svg" alt="logo_bmw">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/citroen.svg" alt="logo_citroen">
                                             </a>
@@ -126,22 +135,22 @@
                                 </li>
                                 <li class="slide_logo slide_2">
                                     <ul class="slide-content">
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/ford.svg" alt="logo_ford">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/fiat.svg" alt="logo_fiat">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/jeep-9.svg" alt="logo_jeep-9">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/honda.svg" alt="logo_honda">
                                             </a>
@@ -150,22 +159,22 @@
                                 </li>
                                 <li class="slide_logo slide_3">
                                     <ul class="slide-content">
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/lamborghini.svg" alt="logo_lamborghini">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/peugeot.svg" alt="logo_peugeot">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/nissan.svg" alt="logo_nissan">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/mitsubishi.svg" alt="logo_mitsubishi">
                                             </a>
@@ -174,22 +183,22 @@
                                 </li>
                                 <li class="slide_logo slide_4">
                                     <ul class="slide-content">
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/volkswagen.svg" alt="logo_volkswagen">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/bugatti.svg" alt="logo_bugatti">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/ferrari.svg" alt="logo_ferrari">
                                             </a>
                                         </li>
-                                        <li class="conteiner_brand">
+                                        <li class="container_brand">
                                             <a class="brand_link" href="#">
                                                 <img src="img/logos/mercedes_Benz.svg" alt="logo_mercedes_Benz">
                                             </a>
@@ -209,44 +218,44 @@
             </section>
         </section>
         <section class="car_body_type">
-            <section class="conteiner">
+            <section class="container">
                 <div class="grid_container">
                     <h2 class="car_body_type_title">AUTOS POR CARROCERIA</h2>
                     <div class="grid_container_content">
                         <div class="grid_col ">
-                            <a class="segment_content" href="/catalogo/convertible">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_1.svg" alt="autos convetibles" />
                                 <h3>Convertible</h3>
                             </a>
-                            <a class="segment_content" href="/catalogo/coupe">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_2.svg" alt="autos convetibles" />
                                 <h3>Coup</h3>
                             </a>
-                            <a class="segment_content" href="/catalogo/stationwagon">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_3.svg" alt="autos convetibles" />
                                 <h3>Familiar</h3>
                             </a>
-                            <a class="segment_content" href="/catalogo/hatchback">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_4.svg" alt="autos convetibles" />
                                 <h3>Hatchback</h3>
                             </a>
-                            <a class="segment_content" href="/catalogo/minivan">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_5.svg" alt="autos convetibles" />
                                 <h3>Monovolumen</h3>
                             </a>
-                            <a class="segment_content" href="/catalogo/minivan">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_6.svg" alt="autos convetibles" />
                                 <h3>Pick Up</h3>
                             </a>
-                            <a class="segment_content" href="/catalogo/sedan">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_1.svg" alt="autos convetibles" />
                                 <h3>Sedan</h3>
                             </a>
-                            <a class="segment_content" href="/catalogo/suv">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_2.svg" alt="autos convetibles" />
                                 <h3>SUV</h3>
                             </a>
-                            <a class="segment_content" href="/catalogo/van">
+                            <a class="segment_content" href="#">
                                 <img src="img/car_type/type_3.svg" alt="autos convetibles" />
                                 <h3>Utilitario</h3>
                             </a>
@@ -256,13 +265,13 @@
             </section>
         </section>
         <section class="new_cars">
-            <section class="conteiner">
-                <div class="title_conteiner">
+            <section class="container">
+                <div class="title_container">
                     <h2 class="title_new_auto">DESCUBRE LOS MÁS NUEVO</h2>
                     <p id="new_cars_info">Encuentra tu próximo vehículo entre nuestras últimas incorporaciones. ¡Explora
                         ahora!</p>
                 </div>
-                <div class="car_cards_conteiner">
+                <div class="car_cards_container">
                     <article class="card">
                         <img class="img_at" src="img/auto9.jpeg" alt="auto nuevo 1" />
                         <div class="card_info">
@@ -297,7 +306,7 @@
             </section>
         </section>
         <section class="sell_car">
-            <section class="conteiner">
+            <section class="container">
                 <section class="sell_car_container">
                     <div class="sell_text_container">
                         <h2 class="title_sell_car">VENDE TU AUTO CON FACILIDAD</h2>
@@ -311,13 +320,13 @@
                         </div>
                     </div>
                     <div class="cont_img_sell">
-                        <img class="seell_img" src="/img//car_sell.png" alt="">
+                        <img class="seell_img" src="/img/img_car_sell.png" alt="img_car_sell">
                     </div>
                 </section>
             </section>
         </section>
         <section class="compare_car_section">
-            <section class="conteiner">
+            <section class="container">
                 <div class="compare_car_flex">
                     <div class="compare_text">
                         <h2 class="title_compare">COMPARA AUTOS</h2>
@@ -327,11 +336,11 @@
                             ideal
                             con facilidad. ¡Realiza tu comparacion ahora! </p>
                     </div>
-                    <div class="compare_car_conteiner">
+                    <div class="compare_car_container">
                         <div class="compare_info_container">
                             <a href="#" class="compare_select_info_link">COMPARAR</a>
                         </div>
-                        <div class="compare_conteiner_img">
+                        <div class="compare_container_img">
                             <img src="img/comp_car2.png" alt="car1" />
                             <img src="img/comp_car.png" alt="car2" />
                         </div>
@@ -342,9 +351,9 @@
     </main>
 
     <footer class="footer_page">
-        <section class="conteiner">
+        <section class="container">
             <section class="footer_section">
-                <a class="logo_conteiner" href="index.html">
+                <a class="logo_container" href="index.html">
                     <img class="logo" src="img/logo white.png" alt="Logo">
                 </a>
                 <ul class="fotter_column">

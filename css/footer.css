@@ -55,12 +55,12 @@
     gap: 1rem;
 }
 
-.footer_section .logo_conteiner .logo {
+.footer_section .logo_container .logo {
     width: 90px;
     height: 70px;
 }
 
-.footer_section .logo_conteiner:hover {
+.footer_section .logo_container:hover {
     scale: 1.2;
 }
 
@@ -79,11 +79,6 @@
 .social_links .social_yt:hover {
     color: #d61111;
 }
-
-@media (min-width: 1024px) {}
-
-@media (min-width: 768px) and (max-width: 1023px) {}
-
 @media (max-width: 767px) {
     .footer_section {
         flex-direction: column;
@@ -100,7 +95,7 @@
         margin-top: 0.8rem;
     }
 
-    .footer_section .logo_conteiner .logo {
+    .footer_section .logo_container .logo {
         height: 60px;
     }
 
