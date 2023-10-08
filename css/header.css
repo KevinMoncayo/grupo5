@@ -90,24 +90,23 @@
     color: rgb(56, 97, 251);
     padding: 0.2rem 0.6rem;
     border: solid 2px rgb(56, 97, 251);
-    border-radius: 1.2rem;
+    border-radius: 0.5rem;
+    opacity: 90%;
 }
 
 .page_header #sing_up {
     color: #ffffff;
     background: rgb(56, 97, 251);
-    border: none;
 }
 
 #profile {
     display: none;
 }
-
-.page_header .user_section:hover {
-    transform: scale(1.05);
+.user_section:hover{
+    opacity: 100%;
 }
 
-.nav_menu a:hover {
+.nav_menu .nav_menu_item a:hover {
     font-weight: 600;
     color: #3861fb;
 }
@@ -123,10 +122,10 @@
 
     .navigation_content {
         left: 0;
-        flex-direction: column-reverse;
+        flex-direction: column;
         position: fixed;
         background-color: rgb(255, 255, 255);
-        justify-content: flex-end;
+        justify-content: flex-start;
         top: 64px;
         height: 100%;
         left: 100%;
@@ -141,7 +140,6 @@
     .navbar .nav_menu {
         padding: 2rem 0;
     }
-
     .page_header .user_section {
         font-size: large;
     }
@@ -152,7 +150,9 @@
 
     .container_user_section {
         flex-direction: column;
-        padding-top: 2rem;
+        width:95%;
+        text-align: center;
+
         margin: 0;
     }
 
