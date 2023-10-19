@@ -46,10 +46,6 @@
     
 }
 
-.descripcion{
-    /*añadir estilos al parrafo descriptivo*/
-}
-
 .boton_formulario a{
     color:#FFF;
 }
@@ -266,7 +262,7 @@
     }
     
     .intro{
-        /* background-color:#00F */;
+        /* background-color:#00F */
         width: 100%;
     }
 
@@ -439,7 +435,7 @@
     }
     
     .intro{
-        /* background-color:#00F */;
+        /* background-color:#00F */
         width: 100%;
     }
 
