@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" href="../css/perfil.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
+    <script defer src="js/nav_bar.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+   
+    
     
     
     <title>Perfil</title>
@@ -60,7 +67,7 @@
               <p><b>Clave: </b>*******</p>              
               <p><b>Telefono: </b>11-5754-9876</p>
               <br>
-              <a class="actualizar_datos" href="#"><i class="fa-solid fa-gear fa-spin"></i> Cambiar datos  </a>
+              <a class="actualizar_datos" href="/grupo5/pages/registro_user.html"><i class="fa-solid fa-gear fa-spin"></i> Cambiar datos  </a>
             </div>
           </section>
           
@@ -72,66 +79,50 @@
 
     <b></b>
 
-    <section class="favoritos">
-        <div class="title_conteiner">
-            <h2 class="title_favoritos"><b><u> <i class="fa-regular fa-star" style="color: #1569f9;"> FAVORITOS </i></u></b></h2>
-            
-        </div>
-        <div class="car_cards_conteiner conteiner">
-            <article class="card">
-                <img class="img_at" src="../img/auto1.jpeg" alt="auto1"/>                
-                <div class="card_info">
-                    <h5 class="card_title">FORD</h5>
-                    <span class="car_price">$90000</span>
-                    <a href="#"><b>Entrar</b></a>
-                </div>
-            </article>
-            <article class="card">
-                <img class="img_at" src="../img/auto2.jpeg" alt="auto2" />
-                <div class="card_info">
-                    <h5 class="card_title">FERRARI</h5>
-                    <span class="car_price">$130000</span>
-                    <a href="#"><b>Entrar</b></a>
-                </div>
-            </article>
-            <article class="card">
-                <img class="img_at" src="../img/auto3.jpeg" alt="auto3" />
-                <div class="card_info">
-                    <h5 class="card_title">BMW</h5>
-                    <span class="car_price">$100000</span>
-                    <a href="#"><b>Entrar</b></a>
-                </div>
-            </article>
 
-            <article class="card">
-                <img class="img_at" src="../img/auto4.jpeg" alt="auto4" />
-                <div class="card_info">
-                    <h5 class="card_title">FIAT</h5>
-                    <span class="car_price">$108000</span>
-                    <a href="#"><b>Entrar</b></a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img class="img_at" src="../img/auto5.jpeg" alt="auto5" />
-                <div class="card_info">
-                    <h5 class="card_title">JEEP</h5>
-                    <span class="car_price">$109700</span>
-                    <a href="#"><b>Entrar</b></a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img class="img_at" src="../img/auto6.jpeg" alt="auto6" />
-                <div class="card_info">
-                    <h5 class="card_title">PORCHE</h5>
-                    <span class="car_price">$155000</span>
-                    <a href="#"><b>Entrar</b></a>
-                </div>
-            </article>
-
-            </article>
-        </div>
+    <section class="new_cars">
+        <section class="container">
+            <div class="title_container">
+                
+                <h2 class="title_new_auto"><b><u> <i class="fa-regular fa-star" style="color: #1569f9;"> FAVORITOS </i></u></b></h2>
+                <p id="new_cars_info">Encuentra tu próximo vehículo. ¡Explora
+                    ahora!</p>
+            </div>
+            <div class="car_cards_container">
+                <article class="card">
+                    <img class="img_at" src="/grupo5/img/auto6.jpeg" alt="auto nuevo 1" />
+                    <div class="card_info">
+                        <h5 class="card_title">FORD</h5>
+                        <div class="details">
+                            <span class="car_price">$90000</span>
+                            <a class="see_details" href="#">ver detalles</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img class="img_at" src="/grupo5/img/auto5.jpeg" alt="auto nuevo 3" />
+                    <div class="card_info">
+                        <h5 class="card_title">JEEP</h5>
+                        <div class="details">
+                            <span class="car_price">$109700</span>
+                            <a class="see_details" href="#">ver detalles</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="img_at" src="/grupo5/img/auto4.jpeg" alt="auto nuevo 1" />
+                    <div class="card_info">
+                        <h5 class="card_title">BMW</h5>
+                        <div class="details">
+                            <span class="car_price">$100000</span>
+                            <a class="see_details" href="#">ver detalles</a>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
     </section>
 
 
