@@ -121,6 +121,10 @@
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 1.2rem;
+/*.car_cards_conteiner {
+    
+    padding: 1rem;
+    display: grid;*/
     justify-content: center;
     align-items: center;
 }
@@ -260,6 +264,12 @@
 /* ----------------------INICIO MEDIA MOBILE ----------------------------------------------*/
 
 @media screen and (max-width: 767px) {
+
+    .conteiner {
+        max-width: 100%;
+        margin:0 auto;
+        padding: 0 1rem;
+    }
 
     .foto_usuario {
         width: 100%;

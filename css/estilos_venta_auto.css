@@ -18,6 +18,11 @@
     padding: 8px;
 }
 
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .header nav ul li{
     display: inline-block;
@@ -63,10 +68,195 @@
     height: 5em;
 }
 
+#intro-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro{
+    /* background-color:#F00; */
+    width: 50%;
+    display: grid;
+}
+
+.intro .titulo{
+    height: 30%;
+    text-align: left;
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 0.5em;
+}
+
+.intro .descripcion{
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 1em;
+}
+
+.intro .boton_formulario {
+    text-align: center;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background-color: rgb(56, 97, 251);
+    padding: 0.2rem 0.6rem;
+    border: solid 2px rgb(56, 97, 251);
+    border-radius: 1.2rem;
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 1em;
+  
+}
+
+#proceso_venta{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor_titulo{
+    width: 100%;
+    margin: 3em auto;
+}
+
+.contenedor_titulo #titulo{
+    text-align: center;
+}
+
+.proceso{
+    flex: 3;
+    padding-top:2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+}
+
+.proceso .titulo_proceso{
+    padding-top:2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.proceso p{
+    padding-top:2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+#letrero{
+    display: flex;
+}
+
+#letrero .contenedor_letrero{
+    background-color: rgb(196, 196, 255);
+}
+
+#anuncio{
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1em;
+    background-color: rgb(0, 30, 255);
+    color: #FFF;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 1.2rem;
+}
+ 
+.grid{
+    display:grid;
+    border-style: solid;
+    border-color: #000;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid legend{
+    font-weight: bold;
+}
+
+.grid-conteiner label{
+    margin:0.5rem;
+    font-weight: bold;
+}
+
+.grid-conteiner input{
+    width: 90%;
+    margin: 0.5rem 0.5rem;
+    border-style: solid;
+    border-color: #000;
+}
+
+.grid-conteiner-selector label, input{
+    font-weight: bold;
+    margin: 0.5rem 0.5rem;
+}
+
+.grid-descripcion{
+    display: grid;
+    border-style: solid;
+    border-color: #000;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-conteiner-descripcion label{
+    font-weight: bold;
+    margin: 0.5rem 0.5rem;
+}
+
+.grid-conteiner-descripcion #descripcion{
+    width: 80%;
+    margin: 0.5rem 0.5rem;
+    border-style: solid;
+    border-color: #000;
+}
+
+.grid-img{
+    display: grid;
+    border-style: solid;
+    border-color: #000;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.grid-img label{
+    margin: 0.5rem 0.5rem;
+}
+
+.grid-img p{
+    margin: 0.5rem 0.5rem;
+}
+
+#button1{
+    display: flex;
+    justify-content: center;
+    margin: 1em 25%;
+}
+
+#button1 .button-container{
+    background-color: #000;
+    padding: 1rem;
+    margin: 0.5rem 25%;
+}
+
+#button1 .button-container #enviar-form{
+    
+    color: #FFF;
+
+}
+
 /* Definiendo los media querys */
 
-@media screen and (min-width: 1024px){
-    /* Propiedades para pantallas de ordenador */
+@media screen and (max-width:766px){
+    /* Propiedades para pantallas de celular */
     
     #intro-container{
         display: flex;
@@ -74,26 +264,18 @@
     }
     
     .intro{
-        /* background-color:#F00; */
-        width: 50%;
-        display: grid;
+        /* background-color:#00F */
+        width: 100%;
     }
 
     .intro .titulo{
-        height: 30%;
-        text-align: left;
-        margin-top: 3em;
-        margin-left: 2em;
-        margin-right: 2em;
-        margin-bottom: 0.5em;
+        text-align: center;
+        margin: 1em 1em;
     }
 
     .intro .descripcion{
-        text-align: left;
-        margin-top: 1em;
-        margin-left: 4em;
-        margin-right: 4em;
-        margin-bottom: 1em;
+        text-align: center;
+        margin: 1em 1em;
     }
 
     .intro .boton_formulario {
@@ -102,13 +284,10 @@
         font-weight: 600;
         font-size: 0.8rem;
         background-color: rgb(56, 97, 251);
-        padding: 0.2rem 0.6rem;
+        padding: 0.2rem;
         border: solid 2px rgb(56, 97, 251);
         border-radius: 1.2rem;
-        margin-top: 1%;
-        margin-left: 40%;
-        margin-right: 40%;
-        margin-bottom: 1em;
+        margin: 1rem 8rem; 
       
     }
 
@@ -118,12 +297,9 @@
     }
 
     .contenedor_titulo{
+        text-align: center;
         width: 100%;
         margin: 3em auto;
-    }
-
-    .contenedor_titulo #titulo{
-        text-align: center;
     }
 
     .proceso{
@@ -139,7 +315,7 @@
         padding-left: 2em;
         padding-right: 2em;
     }
-    
+
     .proceso p{
         padding-top:2em;
         padding-left: 2em;
@@ -154,13 +330,10 @@
     #letrero .contenedor_letrero{
         background-color: rgb(196, 196, 255);
     }
-
+    
     #anuncio{
         padding: 0.5em;
-        margin-top: 1em;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-bottom: 1em;
+        margin: 1em 10%;
         background-color: rgb(0, 30, 255);
         color: #FFF;
         text-align: center;
@@ -169,13 +342,13 @@
         border: solid 2px rgb(255, 255, 255);
         border-radius: 1.2rem;
     }
-     
+
     .grid{
         display:grid;
         border-style: solid;
         border-color: #000;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .grid legend{
@@ -196,15 +369,15 @@
 
     .grid-conteiner-selector label, input{
         font-weight: bold;
-        margin: 0.5rem 0.5rem;
+        margin: 0.5rem 0.1rem;
     }
 
     .grid-descripcion{
         display: grid;
         border-style: solid;
         border-color: #000;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .grid-conteiner-descripcion label{
@@ -250,7 +423,6 @@
     #button1 .button-container #enviar-form{
         color: #FFF;
     }
-    
 }
 
 @media screen and (min-width: 767px) and (max-width:1023px){
@@ -426,173 +598,4 @@
     }
 }
 
-@media screen and (max-width:766px){
-    /* Propiedades para pantallas de celular */
-    
-    #intro-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .intro{
-        /* background-color:#00F */
-        width: 100%;
-    }
-
-    .intro .titulo{
-        text-align: center;
-        margin: 1em 1em;
-    }
-
-    .intro .descripcion{
-        text-align: center;
-        margin: 1em 1em;
-    }
-
-    .intro .boton_formulario {
-        text-align: center;
-        font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 600;
-        font-size: 0.8rem;
-        background-color: rgb(56, 97, 251);
-        padding: 0.2rem;
-        border: solid 2px rgb(56, 97, 251);
-        border-radius: 1.2rem;
-        margin: 1rem 8rem; 
-      
-    }
-
-    #proceso_venta{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .contenedor_titulo{
-        text-align: center;
-        width: 100%;
-        margin: 3em auto;
-    }
-
-    .proceso{
-        flex: 3;
-        padding-top:2em;
-        padding-left: 2em;
-        padding-right: 2em;
-        text-align: center;
-    }
-
-    .proceso .titulo_proceso{
-        padding-top:2em;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    .proceso p{
-        padding-top:2em;
-        padding-left: 2em;
-        padding-right: 2em;
-        padding-bottom: 2em;
-    }
-
-    #letrero{
-        display: flex;
-    }
-
-    #letrero .contenedor_letrero{
-        background-color: rgb(196, 196, 255);
-    }
-    
-    #anuncio{
-        padding: 0.5em;
-        margin: 1em 10%;
-        background-color: rgb(0, 30, 255);
-        color: #FFF;
-        text-align: center;
-        width: auto;
-        height: auto;
-        border: solid 2px rgb(255, 255, 255);
-        border-radius: 1.2rem;
-    }
-
-    .grid{
-        display:grid;
-        border-style: solid;
-        border-color: #000;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .grid legend{
-        font-weight: bold;
-    }
-
-    .grid-conteiner label{
-        margin:0.5rem;
-        font-weight: bold;
-    }
-
-    .grid-conteiner input{
-        width: 90%;
-        margin: 0.5rem 0.5rem;
-        border-style: solid;
-        border-color: #000;
-    }
-
-    .grid-conteiner-selector label, input{
-        font-weight: bold;
-        margin: 0.5rem 0.1rem;
-    }
-
-    .grid-descripcion{
-        display: grid;
-        border-style: solid;
-        border-color: #000;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .grid-conteiner-descripcion label{
-        font-weight: bold;
-        margin: 0.5rem 0.5rem;
-    }
-
-    .grid-conteiner-descripcion #descripcion{
-        width: 80%;
-        margin: 0.5rem 0.5rem;
-        border-style: solid;
-        border-color: #000;
-    }
-
-    .grid-img{
-        display: grid;
-        border-style: solid;
-        border-color: #000;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .grid-img label{
-        margin: 0.5rem 0.5rem;
-    }
-
-    .grid-img p{
-        margin: 0.5rem 0.5rem;
-    }
-
-    #button1{
-        display: flex;
-        justify-content: center;
-        margin: 1em;
-    }
-
-    #button1 .button-container{
-        background-color: #000;
-        padding: 1rem;
-        margin: 0.5rem;
-    }
-
-    #button1 .button-container #enviar-form{
-        color: #FFF;
-    }
-}
 

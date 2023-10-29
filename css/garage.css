@@ -169,3 +169,55 @@ input[type="checkbox"]:checked~.accordion-content {
     padding: 0.5rem 0;
     display: block;
 }
+
+/* Definiendo los media querys */
+
+@media screen and (max-width:766px){
+    /* Propiedades para pantallas de celular */
+
+    .contenedor_filters {
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .acordion {
+        overflow: auto;
+        display: block;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .car_cards_conteiner {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width:1023px){
+    /* Propiedades para pantallas de tablet */
+
+    .contenedor_filters {
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .acordion {
+        overflow: auto;
+        display: block;
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+
+
+
+
+
+
