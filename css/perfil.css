@@ -22,13 +22,13 @@
 /* Container principal Perfil */
 
 
-.container {
+/* .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
   
   /* Parte esquerda (foto do usuário) */
 
@@ -229,13 +229,13 @@
       
        
     
-    .container {
+   /*  .container {
         max-width: 100%;
         margin: 0 auto;
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
-      }
+      } */
       
       /* Parte esquerda (foto do usuário) */
     
