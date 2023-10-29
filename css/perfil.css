@@ -107,7 +107,7 @@
 .car_cards_conteiner {
     
     padding: 1rem;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     gap: var(--spacing-12);
@@ -244,7 +244,7 @@
     
 /* ----------------------INICIO MEDIA MOBILE ----------------------------------------------*/
 
-@media screen and (min-width: 376px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     .conteiner {
         max-width: 100%;
