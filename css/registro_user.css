@@ -24,11 +24,11 @@
     padding: 20px;
 }
 
-.container {
-    max-width: 600px;
+/* .container {
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
-}
+} */
 
 .profile img {
     width: 100px;
@@ -127,11 +127,11 @@ input[type="submit"]:hover {
 
        
    
-    .conteiner {
+    /* .conteiner {
         max-width: 100%;
         margin:0 auto;
         padding: 0 1rem;
-    }
+    } */
      
     
 }
@@ -139,12 +139,12 @@ input[type="submit"]:hover {
 @media screen and (min-width: 767px) and (max-width: 1023px) {
 
 
-    .conteiner {
+   /*  .conteiner {
         max-width: 100%;
         margin:0 auto;
         padding: 0 1rem;
     }
-    
+     */
     
     
     
@@ -154,10 +154,10 @@ input[type="submit"]:hover {
     /* PERFIL*/
     
     
-    .container {
+  /*   .container {
         max-width: 500px;
         
-    }
+    } */
     
   
     

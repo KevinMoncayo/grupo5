@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" href="../css/perfil.css">
     <link rel="stylesheet" href="../css/normalize.css">
-    <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
-    <script defer src="js/nav_bar.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -21,32 +19,36 @@
 
 <body>
     <header class="page_header">
-        <nav class="navbar conteiner">
-            <picture class="logo_conteiner">
-                <a href="../index.html">
-                    <img class="logo" src="../img/logo white.png" alt="Logo">
-                </a>
-            </picture>
-            <ul class="navbar_menu">
-                <li><a href="../index.html" class="navbar_Item">Inicial</a></li>
-                <li><a href="../pages/garage.html" class="navbar_Item">Garage</a></li>
-                <li><a href="../pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a></li>
-                <li><a href="../pages/contacto.html" class="navbar_Item">Contacto</a></li>
-            </ul>
-            <div class="container_user_section">
-                
-                <a id="profile" class="user_section" href="../index.html"><b>Salir</b></a>
-            </div>
-
-            <!--
-            <button id="login" class="user_section" href="/grupo5/pages/login.html">Inicial Sesion</button>
-                <button id="sing_up" class="user_section" href="/grupo5/pages/registro_user.html">Registrarse</button>
-            -->
-        </nav>
+        <section class="container">
+            <nav class="navbar">
+                <picture class="logo_container">
+                    <a href="../index.html">
+                        <img class="logo" src="../img/logo white.png" alt="Logo">
+                    </a>
+                </picture>
+                <div class="navigation_content">
+                    <ul class="nav_menu nav_menu_visible">
+                        <li class="nav_menu_item"><a href="../index.html" class="navbar_Item">Inicial</a></li>
+                        <li class="nav_menu_item"><a href="../pages/garage.html" class="navbar_Item">Garage</a></li>
+                        <li class="nav_menu_item"><a href="../pages/venta_auto.html" class="navbar_Item">Vende tu Auto</a>
+                        </li>
+                        <li class="nav_menu_item"><a href="../pages/contacto.html" class="navbar_Item">Contacto</a></li>
+                    </ul>
+                    <div class="container_user_section">
+                        <a id="login" class="user_section" href="../pages/login.html">Inicial Sesion</a>
+                        <a id="sing_up" class="user_section" href="../pages/registro_user.html">Registrarse</a>
+                        <a id="profile" class="user_section" href="../pages/perfil.html">Perfil</a>
+                    </div>
+                </div>
+                <button class="hamburger">
+                    <div class="hamburger_line1"></div>
+                    <div class="hamburger_line2"></div>
+                    <div class="hamburger_line3"></div>
+                </button>
+            </nav>
+        </section>
+        </section>
     </header>
-
-
-
 
     <main class="container">
         <div class="left">
@@ -67,7 +69,7 @@
               <p><b>Clave: </b>*******</p>              
               <p><b>Telefono: </b>11-5754-9876</p>
               <br>
-              <a class="actualizar_datos" href="/grupo5/pages/registro_user.html"><i class="fa-solid fa-gear fa-spin"></i> Cambiar datos  </a>
+              <a class="actualizar_datos" href="../pages/registro_user.html"><i class="fa-solid fa-gear fa-spin"></i> Cambiar datos  </a>
             </div>
           </section>
           
@@ -90,7 +92,7 @@
             </div>
             <div class="car_cards_container">
                 <article class="card">
-                    <img class="img_at" src="/grupo5/img/auto6.jpeg" alt="auto nuevo 1" />
+                    <img class="img_at" src="../img/auto6.jpeg" alt="auto nuevo 1" />
                     <div class="card_info">
                         <h5 class="card_title">FORD</h5>
                         <div class="details">
@@ -101,7 +103,7 @@
                 </article>
                 
                 <article class="card">
-                    <img class="img_at" src="/grupo5/img/auto5.jpeg" alt="auto nuevo 3" />
+                    <img class="img_at" src="../img/auto5.jpeg" alt="auto nuevo 3" />
                     <div class="card_info">
                         <h5 class="card_title">JEEP</h5>
                         <div class="details">
@@ -111,7 +113,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img class="img_at" src="/grupo5/img/auto4.jpeg" alt="auto nuevo 1" />
+                    <img class="img_at" src="../img/auto4.jpeg" alt="auto nuevo 1" />
                     <div class="card_info">
                         <h5 class="card_title">BMW</h5>
                         <div class="details">
@@ -131,46 +133,50 @@
 
 
 <footer class="footer_page">
-    <div class="footer_section conteiner">
-        <a class="logo_conteiner" href="index.html">
-            <img class="logo" src="../img/LOGO_BLANCO.png" alt="Logo">
-        </a>
-        <ul class="fotter_column">
-            <span class="footer_column_title">¿NECESITA AYUDA?</span>
-            <li><a>Contacto</a></li>
-            <li><a>Preguntas frecuentes</a></li>
-            <li><a>Concesionarios</a></li>
-        </ul>
-        <ul class="fotter_column">
-            <span class="footer_column_title">ATENCION AL CLIENTE</span>
-            <li><a>0800 700-1234</a></li>
-        </ul>
-        <ul class="fotter_column">
-            <span class="footer_column_title">CONDICIONES LEGALES</span>
-            <li><a>Politicas de privacidad</a></li>
-            <li><a>Menciones Legales</a></li>
-        </ul>
-    </div>
-    <div class="footer_section_social conteiner">
-        <ul class="social_links">
-            <span>Segui a ATM en nuestras redes sociales:</span>
-            <li>
-                <a href="https://www.facebook.com" class="social_fb"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="https://twitter.com" class="social_tw"><i class="fa-brands fa-x-twitter"></i></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com" class="social_yt"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-        </ul>
-        <span>@Copyright ATM Todos los derechos reservados.</span>
-    </div>
-
+    <section class="container">
+        <section class="footer_section">
+            <a class="logo_container" href="../index.html">
+                <img class="logo" src="../img/logo white.png" alt="Logo">
+            </a>
+            <ul class="fotter_column">
+                <span class="footer_column_title">¿NECESITA AYUDA?</span>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Concesionarios</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">ATENCION AL CLIENTE</span>
+                <li><a href="#">0800 700-1234</a></li>
+            </ul>
+            <ul class="fotter_column">
+                <span class="footer_column_title">CONDICIONES LEGALES</span>
+                <li><a href="#">Politicas de privacidad</a></li>
+                <li><a href="#">Menciones Legales</a></li>
+            </ul>
+        </section>
+        <div class="footer_section_social">
+            <div class="social_links">
+                <span>Segui a ATM en nuestras redes sociales:</span>
+                <ul class="social_media_container">
+                    <li>
+                        <a href="https://www.facebook.com" class="social_fb"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" class="social_tw"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" class="social_yt"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <span>@Copyright ATM Todos los derechos reservados.</span>
+        </div>
+    </section>
+  </footer>
 
     <script src="https://kit.fontawesome.com/2bfac4fd93.js" crossorigin="anonymous"></script>
-</footer>
-
+    <script defer src="../js/nav_bar.js"></script>
 </body>
 
 </html>
